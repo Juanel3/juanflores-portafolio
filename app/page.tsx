@@ -33,18 +33,18 @@ export default function Home() {
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20 pb-20">
           <div className="w-full grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left side - Text content */}
-            <div className="text-white space-y-6 text-center">
+            <div className="text-white space-y-6 text-center flex flex-col items-center">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight drop-shadow-lg animate-fade-in-up">
                 ¡Hola, soy<br /><strong className="font-bold">Juan Miguel</strong>!
               </h1>
               <p className="text-lg sm:text-xl md:text-2xl text-white drop-shadow-md animate-fade-in-up animation-delay-200">
                 Bienvenido a mi <strong className="font-bold">portafolio</strong>
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center animate-fade-in-up animation-delay-400">
-                <a href="#proyectos" className="px-8 py-3 text-white rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-110 hover:brightness-110 active:scale-105 text-center" style={{ backgroundColor: '#32C4F0' }}>
+              <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center items-center animate-fade-in-up animation-delay-400">
+                <a href="#proyectos" className="px-8 py-3 border-2 border-transparent text-white rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-110 hover:brightness-110 active:scale-105 text-center inline-flex items-center justify-center" style={{ backgroundColor: '#32C4F0' }}>
                   Ver proyectos
                 </a>
-                <a href="#contacto" className="px-8 py-3 bg-transparent border-2 text-white rounded-full font-semibold transition-all duration-300 hover:scale-110 hover:bg-opacity-20 hover:shadow-lg active:scale-105 text-center" style={{ borderColor: '#32C4F0' }}>
+                <a href="#contacto" className="px-8 py-3 bg-transparent border-2 text-white rounded-full font-semibold transition-all duration-300 hover:scale-110 hover:bg-opacity-20 hover:shadow-lg active:scale-105 text-center inline-flex items-center justify-center" style={{ borderColor: '#32C4F0' }}>
                   Contáctame
                 </a>
               </div>
