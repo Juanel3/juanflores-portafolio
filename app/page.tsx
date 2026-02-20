@@ -210,7 +210,7 @@ export default function Home() {
         {/* Overlay para mejor legibilidad del texto */}
         <div className="absolute inset-0 bg-black/10 z-[1]" />
         
-        <div className="relative z-10 container mx-auto px-4 max-w-6xl">
+        <div className="relative z-10 container mx-auto px-6 sm:px-10 lg:px-14 max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-white text-center">
             Mis <span style={{ color: '#32C4F0' }}>proyectos</span>
           </h2>
