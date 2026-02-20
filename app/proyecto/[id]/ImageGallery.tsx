@@ -38,7 +38,7 @@ export default function ImageGallery({ projectId, projectImage }: ImageGalleryPr
 
   const imprentaImage = '/images/neg.png';
   const clarityCenterImage = '/images/imagen.png';
-  const clarityImages = ['/images/Inicio.png', '/images/Cuentas.png', '/images/imagen.png', '/images/Mis%20cuentas.png', '/images/Cuenta.png'];
+  const clarityImages = ['/images/Inicio.png', '/images/cuentas.png', '/images/imagen.png', '/images/Mis%20cuentas.png', '/images/Cuenta.png'];
   const clarityGalleryImages = clarityImages.filter((src) => src !== '/images/imagen.png');
   const clarityLeftImage = '/images/Inicio.png';
   const clarityRightImage = '/images/Cuenta.png';
