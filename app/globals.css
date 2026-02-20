@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0f172a;
+  --foreground: #ededed;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* En móvil el fondo del hero usa scroll para que se vea (fixed no funciona en Safari/iOS) */
+@media (max-width: 1023px) {
+  .hero-bg-inicio {
+    background-attachment: scroll !important;
+  }
+}
+
+@keyframes floatBackground {
+  0%, 100% {
+    background-position: center center;
+    transform: rotate(180deg) scale(1);
+  }
+  50% {
+    background-position: center 60%;
+    transform: rotate(180deg) scale(1.05);
+  }
+}
+
+.animate-float-bg {
+  animation: floatBackground 8s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-zoom-in {
+  animation: zoomIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 0.4s ease-out forwards;
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight 0.4s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.1s;
+  opacity: 0;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.animation-delay-600 {
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-float-in {
+  opacity: 0;
+  animation: floatIn 0.3s ease-out forwards;
+}
+
+.animate-float-in.animation-delay-100 {
+  animation-delay: 0.05s;
+}
+
+.animate-float-in.animation-delay-200 {
+  animation-delay: 0.1s;
+}
+
+.animate-float-in.animation-delay-300 {
+  animation-delay: 0.15s;
+}
+
+.animate-float-in.animation-delay-400 {
+  animation-delay: 0.2s;
+}
+
+.animate-float-in.animation-delay-500 {
+  animation-delay: 0.25s;
+}
+
