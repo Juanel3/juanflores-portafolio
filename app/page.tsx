@@ -70,7 +70,7 @@ export default function Home() {
       {/* About Section */}
       <section id="sobre-mi" className="bg-black container mx-auto px-4 pt-32 pb-20">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center">
-          Sobre <span style={{ color: '#32C4F0' }}>mi</span>
+          Sobre <span style={{ color: '#32C4F0' }}>mí</span>
         </h2>
         
         {/* Sobre mi - Tarjeta horizontal con el mismo diseño que los cuadros */}
