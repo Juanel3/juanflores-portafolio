@@ -32,20 +32,20 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20 pb-20">
           <div className="w-full max-w-4xl mx-auto text-white space-y-6 text-center flex flex-col items-center">
-            <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white/90 font-medium drop-shadow-md animate-hero-subtitle">
+            <p className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl text-white/90 font-medium drop-shadow-md animate-hero-subtitle">
               ¡Hola, soy <strong className="font-bold text-white">Juan Flores</strong>!
             </p>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-tight drop-shadow-lg animate-hero-title animation-delay-200">
-              Diseñador UX/UI
+            <h1 className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight drop-shadow-lg animate-hero-title animation-delay-200">
+              <span className="hero-title-gradient-text">Diseñador UX/UI</span>
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-white drop-shadow-md animate-hero-subtitle animation-delay-400">
+            <p className="text-xl sm:text-xl md:text-2xl text-white drop-shadow-md animate-hero-subtitle animation-delay-400">
               Bienvenido a mi portafolio
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center items-center animate-hero-cta animation-delay-600">
-              <a href="#proyectos" className="px-8 py-3 border-2 border-transparent text-white rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-110 hover:brightness-110 active:scale-105 text-center inline-flex items-center justify-center" style={{ backgroundColor: '#32C4F0' }}>
+            <div className="flex w-[100vw] max-w-[100vw] flex-col gap-4 box-border px-4 pt-12 ml-[calc(50%-50vw)] mr-[calc(50%-50vw)] justify-center items-stretch sm:ml-0 sm:mr-0 sm:w-full sm:max-w-none sm:flex-row sm:items-center sm:px-0 sm:pt-4 animate-hero-cta animation-delay-600">
+              <a href="#proyectos" className="w-full px-8 py-3 border-2 border-transparent text-white rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-110 hover:brightness-110 active:scale-105 text-center inline-flex items-center justify-center sm:w-auto" style={{ backgroundColor: '#32C4F0' }}>
                 Ver proyectos
               </a>
-              <a href="#contacto" className="px-8 py-3 bg-transparent border-2 text-white rounded-full font-semibold transition-all duration-300 hover:scale-110 hover:bg-opacity-20 hover:shadow-lg active:scale-105 text-center inline-flex items-center justify-center" style={{ borderColor: '#32C4F0' }}>
+              <a href="#contacto" className="w-full px-8 py-3 bg-transparent border-2 text-white rounded-full font-semibold transition-all duration-300 hover:scale-110 hover:bg-opacity-20 hover:shadow-lg active:scale-105 text-center inline-flex items-center justify-center sm:w-auto" style={{ borderColor: '#32C4F0' }}>
                 Contáctame
               </a>
             </div>

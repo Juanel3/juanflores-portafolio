@@ -39,7 +39,7 @@ export default function NavBar({ baseHref = '', className = 'top-5' }: NavBarPro
           <button
             type="button"
             onClick={() => setOpen((o) => !o)}
-            className="flex items-center gap-2 rounded-full px-4 py-2.5 text-white transition-colors hover:bg-white/10 font-medium"
+            className="flex items-center justify-center rounded-full p-2.5 text-white transition-colors hover:bg-white/10"
             aria-label={open ? 'Cerrar menú' : 'Abrir menú'}
             aria-expanded={open}
           >
@@ -52,7 +52,6 @@ export default function NavBar({ baseHref = '', className = 'top-5' }: NavBarPro
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             )}
-            Menú
           </button>
         </div>
       </nav>
