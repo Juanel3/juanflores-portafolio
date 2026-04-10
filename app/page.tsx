@@ -10,19 +10,19 @@ export default function Home() {
       <NavBar />
 
       {/* Hero Section with Background Image */}
-      <section 
-        id="inicio" 
+      <section
+        id="inicio"
         className="relative w-full min-h-screen flex items-center overflow-hidden"
       >
         {/* Background Image - scroll en móvil (fixed no funciona en Safari/iOS) */}
-        <div 
+        <div
           className="absolute inset-0 w-full h-full z-0 hero-bg-inicio"
           style={{
             backgroundImage: "url('/images/Hero Gradient - 34.jpg')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-            backgroundAttachment: 'fixed'
+            backgroundAttachment: 'fixed',
           }}
         />
         
