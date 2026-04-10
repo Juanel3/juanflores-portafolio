@@ -50,7 +50,7 @@ export default function ContactForm() {
           value={formData.nombre}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#32C4F0] focus:border-transparent"
+          className="w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#32C4F0] focus:border-transparent"
           placeholder="Tu nombre"
         />
       </div>
@@ -65,7 +65,7 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#32C4F0] focus:border-transparent"
+          className="w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#32C4F0] focus:border-transparent"
           placeholder="tu@email.com"
         />
       </div>
@@ -80,14 +80,14 @@ export default function ContactForm() {
           onChange={handleChange}
           required
           rows={5}
-          className="w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#32C4F0] focus:border-transparent resize-none"
+          className="w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#32C4F0] focus:border-transparent resize-none"
           placeholder="Tu mensaje..."
         ></textarea>
       </div>
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full px-8 py-3 text-white rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full px-8 py-3 text-white rounded-xl font-semibold text-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
         style={{ backgroundColor: '#32C4F0' }}
       >
         {isSubmitting ? 'Enviando...' : 'Enviar mensaje'}

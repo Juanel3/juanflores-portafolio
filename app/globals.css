@@ -103,6 +103,59 @@ body {
   animation: fadeInUp 0.4s ease-out forwards;
 }
 
+/* Hero: subtítulos (separado del título y de los CTA) */
+@keyframes heroSubtitle {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+    filter: blur(7px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes heroCta {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroTitle {
+  from {
+    opacity: 0;
+    transform: translateY(56px) scale(0.88);
+    filter: blur(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.animate-hero-subtitle {
+  opacity: 0;
+  animation: heroSubtitle 0.68s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.animate-hero-cta {
+  opacity: 0;
+  animation: heroCta 0.55s ease-out forwards;
+}
+
+.animate-hero-title {
+  opacity: 0;
+  animation: heroTitle 1.05s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
 .animate-fade-in-left {
   animation: fadeInLeft 0.4s ease-out forwards;
 }

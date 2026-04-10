@@ -31,37 +31,23 @@ export default function Home() {
         
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20 pb-20">
-          <div className="w-full grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
-            {/* Left side - Text content */}
-            <div className="text-white space-y-6 text-center flex flex-col items-center">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight drop-shadow-lg animate-fade-in-up">
-                ¡Hola, soy<br /><strong className="font-bold">Juan Miguel</strong>!
-              </h1>
-              <p className="text-lg sm:text-xl md:text-2xl text-white drop-shadow-md animate-fade-in-up animation-delay-200">
-                Bienvenido a mi <strong className="font-bold">portafolio</strong>
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center items-center animate-fade-in-up animation-delay-400">
-                <a href="#proyectos" className="px-8 py-3 border-2 border-transparent text-white rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-110 hover:brightness-110 active:scale-105 text-center inline-flex items-center justify-center" style={{ backgroundColor: '#32C4F0' }}>
-                  Ver proyectos
-                </a>
-                <a href="#contacto" className="px-8 py-3 bg-transparent border-2 text-white rounded-full font-semibold transition-all duration-300 hover:scale-110 hover:bg-opacity-20 hover:shadow-lg active:scale-105 text-center inline-flex items-center justify-center" style={{ borderColor: '#32C4F0' }}>
-                  Contáctame
-                </a>
-              </div>
-            </div>
-            
-            {/* Right side - 3D Character */}
-            <div className="flex justify-center items-center order-first md:order-last">
-              <div className="w-full max-w-md lg:max-w-lg aspect-square flex items-center justify-center relative animate-fade-in-right animation-delay-600">
-                <Image
-                  src="/images/persona1.png"
-                  alt="Juan Miguel trabajando en laptop"
-                  width={600}
-                  height={600}
-                  className="w-full h-auto object-contain"
-                  priority
-                />
-              </div>
+          <div className="w-full max-w-4xl mx-auto text-white space-y-6 text-center flex flex-col items-center">
+            <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white/90 font-medium drop-shadow-md animate-hero-subtitle">
+              ¡Hola, soy <strong className="font-bold text-white">Juan Flores</strong>!
+            </p>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-tight drop-shadow-lg animate-hero-title animation-delay-200">
+              Diseñador UX/UI
+            </h1>
+            <p className="text-lg sm:text-xl md:text-2xl text-white drop-shadow-md animate-hero-subtitle animation-delay-400">
+              Bienvenido a mi portafolio
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center items-center animate-hero-cta animation-delay-600">
+              <a href="#proyectos" className="px-8 py-3 border-2 border-transparent text-white rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-110 hover:brightness-110 active:scale-105 text-center inline-flex items-center justify-center" style={{ backgroundColor: '#32C4F0' }}>
+                Ver proyectos
+              </a>
+              <a href="#contacto" className="px-8 py-3 bg-transparent border-2 text-white rounded-full font-semibold transition-all duration-300 hover:scale-110 hover:bg-opacity-20 hover:shadow-lg active:scale-105 text-center inline-flex items-center justify-center" style={{ borderColor: '#32C4F0' }}>
+                Contáctame
+              </a>
             </div>
           </div>
         </div>
@@ -73,47 +59,16 @@ export default function Home() {
           Sobre <span style={{ color: '#32C4F0' }}>mí</span>
         </h2>
         
-        {/* Sobre mi - Tarjeta horizontal con el mismo diseño que los cuadros */}
-        <div 
-          className="rounded-[2.5rem] overflow-hidden mb-8 transition-all duration-300 hover:shadow-xl"
-          style={{ 
-            backgroundColor: 'rgba(50, 50, 50, 0.5)',
-            boxShadow: '0 0 10px 5px rgba(50, 196, 240, 0.4)',
-            border: '2px solid #32C4F0'
-          }}
-        >
-          <div className="grid md:grid-cols-3 gap-0 min-h-[320px]">
-            {/* Left - Texto (2/3 del ancho en desktop) */}
-            <div className="md:col-span-2 p-8 md:p-10 flex flex-col justify-center">
-              <p className="text-white text-lg leading-relaxed mb-6">
-                Soy Juan Flores, ingeniero en desarrollo de software con una gran pasión por la tecnología y el diseño. Aplico mis conocimientos en desarrollo y UX/UI para diseñar soluciones intuitivas y visualmente atractivas que mejoran la experiencia del usuario.
-              </p>
-              <p className="text-white text-lg leading-relaxed mb-6">
-                La fotografía y edición de video son otras de mis pasiones, y las utilizo para añadir un toque único a mis proyectos. Cuento con experiencia en marketing digital, en creación de contenido y gestión de redes sociales.
-              </p>
-              <p className="text-white text-lg leading-relaxed">
-                Siempre estoy en busca de nuevas oportunidades para aprender, innovar y mejorar mis habilidades.
-              </p>
-            </div>
-            {/* Right - Foto dentro del cuadro con margen */}
-            <div className="p-4 md:p-6 flex items-center justify-center">
-              <div className="relative w-full min-h-[280px] md:min-h-[260px] rounded-2xl overflow-hidden">
-                <Image
-                  src="/images/animation.png"
-                  alt="Juan Miguel - Sobre mi"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-              </div>
-            </div>
-          </div>
+        <div className="w-full mb-12 md:mb-16">
+          <p className="text-white text-lg leading-relaxed">
+            Soy Juan Flores, ingeniero en desarrollo de software con enfoque en diseño UX/UI. Aplico mis conocimientos para diseñar soluciones intuitivas y visualmente atractivas que mejoran la experiencia del usuario. Cuento con experiencia en marketing digital, en creación de contenido y gestión de redes sociales. Siempre estoy en busca de nuevas oportunidades para aprender, innovar y mejorar mis habilidades.
+          </p>
         </div>
 
         {/* Cuadrícula 2x2: Educación, Cursos, Habilidades, Software */}
         <div className="grid md:grid-cols-2 gap-6 mb-6">
           {/* Educación */}
-          <div className="rounded-[2.5rem] relative p-6 transition-all duration-300 hover:scale-[1.02] cursor-pointer" style={{ backgroundColor: 'rgba(50, 50, 50, 0.5)', boxShadow: '0 0 10px 5px rgba(50, 196, 240, 0.4)', border: '2px solid #32C4F0' }}>
+          <div className="rounded-[2.5rem] relative p-6 transition-all duration-300 hover:scale-[1.02] cursor-pointer backdrop-blur-xl bg-[rgba(50,50,50,0.42)] border border-white/[0.14] shadow-[0_8px_32px_rgba(0,0,0,0.35)]">
             <h3 className="absolute top-4 left-6 px-5 py-2 rounded-full text-lg font-semibold text-white z-10 whitespace-nowrap" style={{ backgroundColor: '#32C4F0' }}>
               Educación
             </h3>
@@ -125,7 +80,7 @@ export default function Home() {
           </div>
 
           {/* Cursos | certificados */}
-          <div className="rounded-[2.5rem] relative p-6 transition-all duration-300 hover:scale-[1.02] cursor-pointer" style={{ backgroundColor: 'rgba(50, 50, 50, 0.5)', boxShadow: '0 0 10px 5px rgba(50, 196, 240, 0.4)', border: '2px solid #32C4F0' }}>
+          <div className="rounded-[2.5rem] relative p-6 transition-all duration-300 hover:scale-[1.02] cursor-pointer backdrop-blur-xl bg-[rgba(50,50,50,0.42)] border border-white/[0.14] shadow-[0_8px_32px_rgba(0,0,0,0.35)]">
             <h3 className="absolute top-4 left-6 px-5 py-2 rounded-full text-lg font-semibold text-white z-10 whitespace-nowrap" style={{ backgroundColor: '#32C4F0' }}>
               Cursos | certificados
             </h3>
@@ -141,7 +96,7 @@ export default function Home() {
           </div>
 
           {/* Habilidades */}
-          <div className="rounded-[2.5rem] relative p-6 transition-all duration-300 hover:scale-[1.02] cursor-pointer" style={{ backgroundColor: 'rgba(50, 50, 50, 0.5)', boxShadow: '0 0 10px 5px rgba(50, 196, 240, 0.4)', border: '2px solid #32C4F0' }}>
+          <div className="rounded-[2.5rem] relative p-6 transition-all duration-300 hover:scale-[1.02] cursor-pointer backdrop-blur-xl bg-[rgba(50,50,50,0.42)] border border-white/[0.14] shadow-[0_8px_32px_rgba(0,0,0,0.35)]">
             <h3 className="absolute top-4 left-6 px-5 py-2 rounded-full text-lg font-semibold text-white z-10 whitespace-nowrap" style={{ backgroundColor: '#32C4F0' }}>
               Habilidades
             </h3>
@@ -157,7 +112,7 @@ export default function Home() {
           </div>
 
           {/* Software */}
-          <div className="rounded-[2.5rem] relative p-6 transition-all duration-300 hover:scale-[1.02] cursor-pointer" style={{ backgroundColor: 'rgba(50, 50, 50, 0.5)', boxShadow: '0 0 10px 5px rgba(50, 196, 240, 0.4)', border: '2px solid #32C4F0' }}>
+          <div className="rounded-[2.5rem] relative p-6 transition-all duration-300 hover:scale-[1.02] cursor-pointer backdrop-blur-xl bg-[rgba(50,50,50,0.42)] border border-white/[0.14] shadow-[0_8px_32px_rgba(0,0,0,0.35)]">
             <h3 className="absolute top-4 left-6 px-5 py-2 rounded-full text-lg font-semibold text-white z-10 whitespace-nowrap" style={{ backgroundColor: '#32C4F0' }}>
               Software
             </h3>
@@ -249,48 +204,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section - Fondo footer.jpg, ilustración correo */}
-      <section 
-        id="contacto" 
-        className="relative w-full min-h-screen flex items-center overflow-hidden"
+      {/* Contact Section */}
+      <section
+        id="contacto"
+        className="relative w-full min-h-screen flex items-center overflow-hidden bg-black"
       >
-        {/* Fondo de la sección: footer.jpg */}
-        <div 
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: "url('/images/footer.png')",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }}
-        />
-        <div className="absolute inset-0 bg-black/40 z-[1]" aria-hidden />
-        
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 text-center">
-              Contacto
-            </h2>
-            
-            <div className="w-full grid md:grid-cols-2 gap-12 lg:gap-16 items-stretch">
-              {/* Izquierda - Formulario */}
-              <div className="text-white pt-8">
+            <div className="rounded-[2.5rem] p-6 sm:p-8 md:p-10 lg:p-12 backdrop-blur-xl bg-[rgba(50,50,50,0.42)] border border-white/[0.14] shadow-[0_8px_32px_rgba(0,0,0,0.35)]">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 md:mb-10 text-center">
+                Contacto
+              </h2>
+
+              <div className="w-full max-w-lg mx-auto text-white">
                 <ContactForm />
-              </div>
-              
-              {/* Derecha - Ilustración correo, alineada con inputs y mismo alto que el formulario */}
-              <div className="pt-8 h-full min-h-[320px] flex">
-                <div className="w-full h-full rounded-3xl bg-white/95 shadow-xl border border-blue-100 overflow-hidden p-6 flex flex-col">
-                  <div className="relative flex-1 min-h-0 w-full flex items-center justify-center">
-                    <Image
-                      src="/images/correo.jpg"
-                      alt="Contacto - comunicación"
-                      fill
-                      className="object-contain"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                    />
-                  </div>
-                </div>
               </div>
             </div>
           </div>

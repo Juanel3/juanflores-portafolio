@@ -11,8 +11,7 @@ type ProjectCardProps = {
 export default function ProjectCard({ title, description, imageSrc, imageAlt, href }: ProjectCardProps) {
   return (
     <div
-      className="rounded-[3rem] border-2 flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
-      style={{ backgroundColor: 'rgba(255, 255, 255, 0.46)', borderColor: 'rgba(255, 255, 255, 0.5)' }}
+      className="rounded-[3rem] flex flex-col transition-all duration-300 hover:scale-105 cursor-pointer backdrop-blur-xl bg-white/25 border border-white/25 shadow-[0_8px_32px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.28)]"
     >
       <div className="p-4">
         <div className="h-48 rounded-[2rem] relative overflow-hidden">
