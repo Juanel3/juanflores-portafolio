@@ -137,7 +137,7 @@ export default function ImageGallery({ projectId, projectImage }: ImageGalleryPr
             <button
               type="button"
               onClick={openGalleryModal}
-              className="rounded-full border-2 border-white px-8 py-3 font-semibold text-white transition-all hover:scale-105 active:scale-100"
+              className="rounded-full border-2 border-[#32C4F0] px-8 py-3 font-semibold text-white transition-all hover:scale-105 hover:bg-[#32C4F0]/10 active:scale-100"
             >
               Ver galería
             </button>

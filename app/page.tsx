@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import ContactForm from './components/ContactForm';
+import HeroBackground from './components/HeroBackground';
 import NavBar from './components/NavBar';
 import ProjectCard from './components/ProjectCard';
 
@@ -14,17 +15,7 @@ export default function Home() {
         id="inicio"
         className="relative w-full min-h-screen flex items-center overflow-hidden"
       >
-        {/* Background Image - scroll en móvil (fixed no funciona en Safari/iOS) */}
-        <div
-          className="absolute inset-0 w-full h-full z-0 hero-bg-inicio"
-          style={{
-            backgroundImage: "url('/images/Hero Gradient - 34.jpg')",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            backgroundAttachment: 'fixed',
-          }}
-        />
+        <HeroBackground />
         
         {/* Overlay para mejor legibilidad del texto */}
         <div className="absolute inset-0 bg-black/10 z-[1]" />
@@ -35,7 +26,7 @@ export default function Home() {
             <p className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl text-white/90 font-medium drop-shadow-md animate-hero-subtitle">
               ¡Hola, soy <strong className="font-bold text-white">Juan Flores</strong>!
             </p>
-            <h1 className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight drop-shadow-lg animate-hero-title animation-delay-200">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight drop-shadow-lg animate-hero-title animation-delay-200">
               <span className="hero-title-gradient-text">Diseñador UX/UI</span>
             </h1>
             <p className="text-xl sm:text-xl md:text-2xl text-white drop-shadow-md animate-hero-subtitle animation-delay-400">
