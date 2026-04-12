@@ -22,21 +22,21 @@ export default function Home() {
         
         {/* Content */}
         <div className="relative z-10 container w-full pt-16 pb-16 sm:pt-20 sm:pb-20">
-          <div className="mx-auto w-full max-w-3xl px-1 text-white flex flex-col items-center text-center space-y-5 sm:space-y-6">
-            <p className="text-lg font-medium text-white/90 drop-shadow-md animate-hero-subtitle sm:text-xl md:text-2xl">
+          <div className="mx-auto flex w-full max-w-4xl flex-col items-center space-y-6 text-center text-white sm:space-y-7">
+            <p className="text-xl font-medium text-white/90 drop-shadow-md animate-hero-subtitle sm:text-2xl md:text-3xl">
               ¡Hola, soy <strong className="font-bold text-white">Juan Flores</strong>!
             </p>
-            <h1 className="text-4xl font-bold leading-tight drop-shadow-lg animate-hero-title animation-delay-200 md:text-5xl lg:text-6xl xl:text-7xl">
+            <h1 className="text-5xl font-bold leading-[1.08] drop-shadow-lg animate-hero-title animation-delay-200 md:text-6xl lg:text-7xl xl:text-8xl">
               <span className="hero-title-gradient-text">Diseñador UX/UI</span>
             </h1>
-            <p className="text-base text-white drop-shadow-md animate-hero-subtitle animation-delay-400 md:text-lg">
+            <p className="text-lg text-white drop-shadow-md animate-hero-subtitle animation-delay-400 md:text-xl">
               Bienvenido a mi portafolio
             </p>
-            <div className="flex w-full max-w-sm flex-col gap-3 pt-8 animate-hero-cta animation-delay-600 sm:max-w-none sm:flex-row sm:justify-center sm:gap-4 sm:pt-6">
-              <a href="#proyectos" className="inline-flex w-full items-center justify-center rounded-full border-2 border-transparent px-6 py-2.5 text-center text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-100 sm:w-auto sm:px-7 sm:py-3 sm:text-base" style={{ backgroundColor: '#32C4F0' }}>
+            <div className="flex w-full max-w-md flex-col gap-4 pt-9 animate-hero-cta animation-delay-600 sm:max-w-none sm:flex-row sm:justify-center sm:gap-5 sm:pt-7">
+              <a href="#proyectos" className="inline-flex w-full items-center justify-center rounded-full border-2 border-transparent px-8 py-3 text-center text-base font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-100 sm:w-auto sm:px-10 sm:py-3.5 sm:text-lg" style={{ backgroundColor: '#32C4F0' }}>
                 Ver proyectos
               </a>
-              <a href="#contacto" className="inline-flex w-full items-center justify-center rounded-full border-2 bg-transparent px-6 py-2.5 text-center text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-opacity-20 hover:shadow-lg active:scale-100 sm:w-auto sm:px-7 sm:py-3 sm:text-base" style={{ borderColor: '#32C4F0' }}>
+              <a href="#contacto" className="inline-flex w-full items-center justify-center rounded-full border-2 bg-transparent px-8 py-3 text-center text-base font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-opacity-20 hover:shadow-lg active:scale-100 sm:w-auto sm:px-10 sm:py-3.5 sm:text-lg" style={{ borderColor: '#32C4F0' }}>
                 Contáctame
               </a>
             </div>
@@ -174,7 +174,7 @@ export default function Home() {
           <h2 className="mb-8 text-center text-3xl font-bold text-white md:mb-10 md:text-4xl">
             Mis <span style={{ color: '#32C4F0' }}>proyectos</span>
           </h2>
-          <div className="grid gap-6 md:grid-cols-3 md:gap-7">
+          <div className="grid items-start gap-6 md:grid-cols-3 md:gap-7">
             <ProjectCard
               title="Clarity"
               description="App móvil para organizar mejor tu dinero y tomar el control de tus finanzas personales."

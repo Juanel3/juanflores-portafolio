@@ -107,7 +107,7 @@ export default async function ProjectDetail({
           aria-hidden
         />
 
-        <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 mx-auto max-w-5xl px-6 lg:px-8">
           <div className="grid items-center gap-8 lg:grid-cols-12 lg:gap-10">
             <div className="space-y-6 lg:col-span-5">
               <h1 className="flex flex-col gap-2">
@@ -172,7 +172,7 @@ export default async function ProjectDetail({
 
       {/* Interfaz: título, descripción e imágenes */}
       <section className="border-t border-white/[0.07] bg-neutral-950 py-12 md:py-16">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center md:max-w-3xl">
             <h2 className="text-2xl font-bold tracking-tight text-white md:text-3xl">Interfaz</h2>
             <p className="mt-3 text-sm text-neutral-400 md:mt-4 md:text-base">

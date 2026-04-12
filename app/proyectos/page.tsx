@@ -45,7 +45,7 @@ export default function ProyectosPage() {
             Mis <span style={{ color: '#32C4F0' }}>proyectos</span>
           </h1>
 
-          <div className="mb-10 grid gap-6 md:grid-cols-2 md:gap-7 lg:grid-cols-3">
+          <div className="mb-10 grid items-start gap-6 md:grid-cols-2 md:gap-7 lg:grid-cols-3">
             {projects.map((project) => (
               <ProjectCard
                 key={project.href}
