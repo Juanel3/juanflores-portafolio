@@ -40,7 +40,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
       <div>
-        <label htmlFor="nombre" className="block text-sm font-medium text-white mb-1">
+        <label htmlFor="nombre" className="type-label mb-1 block text-white">
           Nombre
         </label>
         <input
@@ -50,12 +50,12 @@ export default function ContactForm() {
           value={formData.nombre}
           onChange={handleChange}
           required
-          className="w-full rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-sm text-white placeholder-gray-300 backdrop-blur-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#32C4F0] sm:px-4 sm:py-3 sm:text-base"
+          className="type-input w-full rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-white placeholder-gray-300 backdrop-blur-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#32C4F0] sm:px-4 sm:py-3"
           placeholder="Tu nombre"
         />
       </div>
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
+        <label htmlFor="email" className="type-label mb-2 block text-white">
           Email
         </label>
         <input
@@ -65,12 +65,12 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="w-full rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-sm text-white placeholder-gray-300 backdrop-blur-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#32C4F0] sm:px-4 sm:py-3 sm:text-base"
+          className="type-input w-full rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-white placeholder-gray-300 backdrop-blur-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#32C4F0] sm:px-4 sm:py-3"
           placeholder="tu@email.com"
         />
       </div>
       <div>
-        <label htmlFor="mensaje" className="block text-sm font-medium text-white mb-2">
+        <label htmlFor="mensaje" className="type-label mb-2 block text-white">
           Mensaje
         </label>
         <textarea
@@ -80,14 +80,14 @@ export default function ContactForm() {
           onChange={handleChange}
           required
           rows={4}
-          className="w-full resize-none rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-sm text-white placeholder-gray-300 backdrop-blur-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#32C4F0] sm:px-4 sm:py-3 sm:text-base"
+          className="type-input w-full resize-none rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-white placeholder-gray-300 backdrop-blur-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#32C4F0] sm:px-4 sm:py-3"
           placeholder="Tu mensaje..."
         ></textarea>
       </div>
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full rounded-xl px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:scale-[1.02] hover:shadow-lg disabled:cursor-not-allowed disabled:opacity-50 sm:py-3 sm:text-base"
+        className="type-button w-full rounded-xl px-6 py-2.5 text-white transition-all duration-300 hover:scale-[1.02] hover:shadow-lg disabled:cursor-not-allowed disabled:opacity-50 sm:py-3"
         style={{ backgroundColor: '#32C4F0' }}
       >
         {isSubmitting ? 'Enviando...' : 'Enviar mensaje'}

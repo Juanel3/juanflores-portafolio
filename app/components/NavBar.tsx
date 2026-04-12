@@ -24,7 +24,7 @@ export default function NavBar({ baseHref = '', className = 'top-5' }: NavBarPro
   const fullHref = (hash: string) => `${baseHref}#${hash}`;
 
   return (
-    <header className={`fixed left-1/2 top-4 z-50 -translate-x-1/2 px-6 sm:top-5 sm:px-4 ${className}`}>
+    <header className={`fixed left-1/2 top-4 z-50 -translate-x-1/2 px-4 sm:top-5 sm:px-5 md:px-6 lg:px-0 ${className}`}>
       <nav className="flex flex-nowrap items-center justify-center gap-1.5 rounded-full border border-blue-300/40 bg-gray-900/70 px-3 py-2 shadow-xl backdrop-blur-lg sm:gap-2 sm:px-4 sm:py-2.5 md:gap-2 md:px-4 lg:gap-3 lg:px-5">
         {/* Desktop: full links — una sola fila en md+ */}
         <div className="hidden flex-nowrap md:flex md:items-center md:gap-2 lg:gap-3">
@@ -71,7 +71,7 @@ export default function NavBar({ baseHref = '', className = 'top-5' }: NavBarPro
                 key={href}
                 href={fullHref(href)}
                 onClick={() => setOpen(false)}
-                className="block px-5 py-3 text-center text-white transition-colors hover:bg-white/10 hover:text-[#32C4F0]"
+                className="type-body block px-5 py-3 text-center text-white transition-colors hover:bg-white/10 hover:text-[#32C4F0]"
               >
                 {label}
               </a>

@@ -76,12 +76,12 @@ export default async function ProjectDetail({
   if (!project) {
     return (
       <main className="min-h-screen bg-neutral-950 text-white">
-        <div className="mx-auto flex max-w-lg flex-col items-center px-6 py-28 text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-neutral-500">404</p>
-          <h1 className="mt-4 text-3xl font-bold tracking-tight">Proyecto no encontrado</h1>
+        <div className="mx-auto flex max-w-lg flex-col items-center px-4 py-28 text-center sm:px-8 md:px-10">
+          <p className="type-body-sm font-semibold uppercase tracking-[0.35em] text-neutral-500">404</p>
+          <h1 className="type-section-title mt-4">Proyecto no encontrado</h1>
           <Link
             href="/#proyectos"
-            className="mt-10 rounded-full border border-[#32C4F0]/40 bg-[#32C4F0]/10 px-6 py-3 text-sm font-semibold text-[#7ddcf5] transition hover:bg-[#32C4F0]/20"
+            className="type-button-sm mt-10 rounded-full border border-[#32C4F0]/40 bg-[#32C4F0]/10 px-6 py-3 text-[#7ddcf5] transition hover:bg-[#32C4F0]/20"
           >
             Volver a proyectos
           </Link>
@@ -107,21 +107,21 @@ export default async function ProjectDetail({
           aria-hidden
         />
 
-        <div className="relative z-10 mx-auto max-w-5xl px-6 lg:px-8">
+        <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-5 md:px-6 lg:px-1 xl:px-2">
           <div className="grid items-center gap-8 lg:grid-cols-12 lg:gap-10">
             <div className="space-y-6 lg:col-span-5">
               <h1 className="flex flex-col gap-2">
-                <span className="text-base font-normal text-neutral-400 sm:text-lg">{project.title}</span>
-                <span className="text-3xl font-bold leading-[1.08] tracking-tight text-white sm:text-4xl lg:text-[2.15rem] xl:text-[2.35rem]">
+                <span className="type-body-sm font-normal text-neutral-400">{project.title}</span>
+                <span className="type-section-title leading-[1.08] tracking-tight">
                   {project.subtitle}
                 </span>
               </h1>
               <span
-                className={`inline-flex rounded-full border px-4 py-2 text-sm font-medium text-white ${accent.chip}`}
+                className={`type-pill inline-flex rounded-full border px-4 py-2 text-white ${accent.chip}`}
               >
                 {project.tag}
               </span>
-              <p className="max-w-xl text-sm leading-relaxed text-neutral-400 sm:text-base">
+              <p className="type-body max-w-xl text-neutral-400">
                 {project.description}
               </p>
               {project.id === 'jm-estudio' && (
@@ -129,7 +129,7 @@ export default async function ProjectDetail({
                   href={project.websiteUrl ?? '#'}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border-2 border-[#32C4F0] bg-[#32C4F0]/10 px-8 py-3 text-sm font-semibold text-white transition hover:scale-[1.02] hover:bg-[#32C4F0]/25"
+                  className="type-button-sm inline-flex items-center gap-2 rounded-full border-2 border-[#32C4F0] bg-[#32C4F0]/10 px-8 py-3 text-white transition hover:scale-[1.02] hover:bg-[#32C4F0]/25"
                 >
                   Ver sitio
                   <svg
@@ -172,10 +172,10 @@ export default async function ProjectDetail({
 
       {/* Interfaz: título, descripción e imágenes */}
       <section className="border-t border-white/[0.07] bg-neutral-950 py-12 md:py-16">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl px-4 sm:px-5 md:px-6 lg:px-1 xl:px-2">
           <div className="mx-auto max-w-2xl text-center md:max-w-3xl">
-            <h2 className="text-2xl font-bold tracking-tight text-white md:text-3xl">Interfaz</h2>
-            <p className="mt-3 text-sm text-neutral-400 md:mt-4 md:text-base">
+            <h2 className="type-subsection-title">Interfaz</h2>
+            <p className="type-body-sm mt-3 text-neutral-400 md:mt-4">
               {project.id === 'clarity'
                 ? 'Selecciona la imagen para ver completa la app.'
                 : 'Selecciona la imagen para ver completa la página.'}
@@ -190,7 +190,7 @@ export default async function ProjectDetail({
       <div className="fixed bottom-6 right-4 z-50 sm:bottom-8 sm:right-8">
         <a
           href="/#proyectos"
-          className="flex items-center gap-2 rounded-full border border-[#32C4F0]/35 bg-neutral-950/90 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-black/40 backdrop-blur-md transition hover:border-[#32C4F0]/60 hover:bg-[#32C4F0]/15"
+          className="type-button-sm flex items-center gap-2 rounded-full border border-[#32C4F0]/35 bg-neutral-950/90 px-5 py-3 text-white shadow-lg shadow-black/40 backdrop-blur-md transition hover:border-[#32C4F0]/60 hover:bg-[#32C4F0]/15"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

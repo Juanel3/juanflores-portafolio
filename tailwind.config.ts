@@ -10,9 +10,14 @@ const config: Config = {
     container: {
       center: true,
       padding: {
-        DEFAULT: "2rem",
+        /* Celular y pantallas medianas: más margen lateral */
+        DEFAULT: "1.25rem",
         sm: "1.5rem",
-        lg: "2rem",
+        md: "1.75rem",
+        /* Escritorio: se mantiene más contenido útil */
+        lg: "0.25rem",
+        xl: "0.25rem",
+        "2xl": "0.5rem",
       },
     },
     extend: {

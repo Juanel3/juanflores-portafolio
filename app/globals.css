@@ -13,7 +13,7 @@ html {
 
 @media (min-width: 1024px) {
   html {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 
@@ -22,6 +22,52 @@ body {
   background: var(--background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  /* Escala consistente (ligeramente contenida en lg+ vía html 15px) */
+  .type-section-title {
+    @apply text-3xl font-bold text-white md:text-4xl;
+  }
+  .type-subsection-title {
+    @apply text-xl font-bold tracking-tight text-white md:text-2xl;
+  }
+  .type-hero-intro {
+    @apply text-lg font-medium text-white/90 sm:text-xl md:text-2xl;
+  }
+  .type-hero-display {
+    @apply text-4xl font-bold leading-[1.08] md:text-5xl lg:text-5xl xl:text-6xl;
+  }
+  .type-hero-tagline {
+    @apply text-base text-white md:text-lg;
+  }
+  .type-lead {
+    @apply text-base leading-relaxed md:text-lg;
+  }
+  .type-body {
+    @apply text-sm leading-relaxed sm:text-base md:text-base;
+  }
+  .type-body-sm {
+    @apply text-xs leading-relaxed md:text-sm;
+  }
+  .type-label {
+    @apply text-xs font-medium md:text-sm;
+  }
+  .type-card-title {
+    @apply text-base font-bold md:text-lg;
+  }
+  .type-pill {
+    @apply text-xs font-semibold md:text-sm;
+  }
+  .type-button {
+    @apply text-sm font-semibold md:text-base;
+  }
+  .type-button-sm {
+    @apply text-xs font-semibold md:text-sm;
+  }
+  .type-input {
+    @apply text-sm md:text-base;
+  }
 }
 
 @layer utilities {

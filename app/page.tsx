@@ -22,21 +22,21 @@ export default function Home() {
         
         {/* Content */}
         <div className="relative z-10 container w-full pt-16 pb-16 sm:pt-20 sm:pb-20">
-          <div className="mx-auto flex w-full max-w-4xl flex-col items-center space-y-6 text-center text-white sm:space-y-7 lg:max-w-3xl lg:space-y-5">
-            <p className="text-xl font-medium text-white/90 drop-shadow-md animate-hero-subtitle sm:text-2xl md:text-3xl lg:text-3xl">
+          <div className="mx-auto flex w-full max-w-4xl flex-col items-center space-y-6 text-center text-white sm:space-y-7 lg:max-w-2xl lg:space-y-5">
+            <p className="type-hero-intro drop-shadow-md animate-hero-subtitle">
               ¡Hola, soy <strong className="font-bold text-white">Juan Flores</strong>!
             </p>
-            <h1 className="text-5xl font-bold leading-[1.08] drop-shadow-lg animate-hero-title animation-delay-200 md:text-6xl lg:text-6xl xl:text-7xl">
+            <h1 className="type-hero-display drop-shadow-lg animate-hero-title animation-delay-200">
               <span className="hero-title-gradient-text">Diseñador UX/UI</span>
             </h1>
-            <p className="text-lg text-white drop-shadow-md animate-hero-subtitle animation-delay-400 md:text-xl lg:text-xl">
+            <p className="type-hero-tagline drop-shadow-md animate-hero-subtitle animation-delay-400">
               Bienvenido a mi portafolio
             </p>
             <div className="flex w-full max-w-md flex-col gap-4 pt-9 animate-hero-cta animation-delay-600 sm:max-w-none sm:flex-row sm:justify-center sm:gap-5 sm:pt-7 lg:gap-4 lg:pt-6">
-              <a href="#proyectos" className="inline-flex w-full items-center justify-center rounded-full border-2 border-transparent px-8 py-3 text-center text-base font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-100 sm:w-auto sm:px-10 sm:py-3.5 sm:text-lg lg:px-9 lg:py-3 lg:text-lg" style={{ backgroundColor: '#32C4F0' }}>
+              <a href="#proyectos" className="type-button inline-flex w-full items-center justify-center rounded-full border-2 border-transparent px-8 py-3 text-center text-white shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-100 sm:w-auto sm:px-10 sm:py-3.5 lg:px-9 lg:py-3" style={{ backgroundColor: '#32C4F0' }}>
                 Ver proyectos
               </a>
-              <a href="#contacto" className="inline-flex w-full items-center justify-center rounded-full border-2 bg-transparent px-8 py-3 text-center text-base font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-opacity-20 hover:shadow-lg active:scale-100 sm:w-auto sm:px-10 sm:py-3.5 sm:text-lg lg:px-9 lg:py-3 lg:text-lg" style={{ borderColor: '#32C4F0' }}>
+              <a href="#contacto" className="type-button inline-flex w-full items-center justify-center rounded-full border-2 bg-transparent px-8 py-3 text-center text-white transition-all duration-300 hover:scale-105 hover:bg-opacity-20 hover:shadow-lg active:scale-100 sm:w-auto sm:px-10 sm:py-3.5 lg:px-9 lg:py-3" style={{ borderColor: '#32C4F0' }}>
                 Contáctame
               </a>
             </div>
@@ -46,13 +46,13 @@ export default function Home() {
 
       {/* About Section */}
       <section id="sobre-mi" className="bg-black">
-        <div className="container max-w-4xl py-16 sm:py-20 md:py-24">
-          <h2 className="mb-8 text-center text-4xl font-bold text-white md:mb-10 md:text-5xl">
+        <div className="container w-full max-w-4xl py-16 sm:py-20 md:py-24 lg:max-w-5xl xl:max-w-6xl">
+          <h2 className="type-section-title mb-8 text-center md:mb-10">
             Sobre <span style={{ color: '#32C4F0' }}>mí</span>
           </h2>
 
           <div className="mb-10 md:mb-12">
-            <p className="text-base leading-relaxed text-white sm:text-lg">
+            <p className="type-lead text-white">
               Soy Juan Flores, ingeniero en desarrollo de software con enfoque en diseño UX/UI. Aplico mis conocimientos para diseñar soluciones intuitivas y visualmente atractivas que mejoran la experiencia del usuario. Cuento con experiencia en marketing digital, en creación de contenido y gestión de redes sociales. Siempre estoy en busca de nuevas oportunidades para aprender, innovar y mejorar mis habilidades.
             </p>
           </div>
@@ -62,28 +62,28 @@ export default function Home() {
             {/* Educación */}
             <div className="relative cursor-pointer overflow-hidden rounded-[2rem] border border-white/[0.14] bg-[rgba(50,50,50,0.42)] p-5 pt-16 shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-xl transition-all duration-300 hover:scale-[1.01] sm:rounded-[2.25rem]">
               <h3
-                className="absolute left-3 top-3 z-10 inline-flex max-w-[calc(100%-1.5rem)] items-center rounded-[2rem] px-4 py-2 text-sm font-semibold text-white sm:left-4 sm:top-4 sm:rounded-[2.25rem] sm:px-4 sm:py-2 sm:text-base"
+                className="type-pill absolute left-3 top-3 z-10 inline-flex max-w-[calc(100%-1.5rem)] items-center rounded-[2rem] px-4 py-2 text-white sm:left-4 sm:top-4 sm:rounded-[2.25rem] sm:px-4 sm:py-2"
                 style={{ backgroundColor: '#32C4F0' }}
               >
                 Educación
               </h3>
               <div className="text-white">
-                <p className="mb-2 text-base font-medium text-white">Ingeniería en desarrollo de software</p>
-                <p className="mb-1 text-gray-200">Universidad Tecmilenio</p>
-                <p className="text-gray-300">2021 - 2025</p>
+                <p className="type-body mb-2 font-medium text-white">Ingeniería en desarrollo de software</p>
+                <p className="type-body mb-1 text-gray-200">Universidad Tecmilenio</p>
+                <p className="type-body text-gray-300">2021 - 2025</p>
               </div>
             </div>
 
             {/* Cursos | certificados */}
             <div className="relative cursor-pointer overflow-hidden rounded-[2rem] border border-white/[0.14] bg-[rgba(50,50,50,0.42)] p-5 pt-16 shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-xl transition-all duration-300 hover:scale-[1.01] sm:rounded-[2.25rem]">
               <h3
-                className="absolute left-3 top-3 z-10 inline-flex max-w-[calc(100%-1.5rem)] items-center rounded-[2rem] px-4 py-2 text-left text-sm font-semibold leading-snug text-white sm:left-4 sm:top-4 sm:rounded-[2.25rem] sm:px-4 sm:py-2 sm:text-base"
+                className="type-pill absolute left-3 top-3 z-10 inline-flex max-w-[calc(100%-1.5rem)] items-center rounded-[2rem] px-4 py-2 text-left leading-snug text-white sm:left-4 sm:top-4 sm:rounded-[2.25rem] sm:px-4 sm:py-2"
                 style={{ backgroundColor: '#32C4F0' }}
               >
                 Cursos | certificados
               </h3>
               <div className="text-white">
-                <ul className="list-inside list-disc space-y-1.5 text-sm sm:text-base">
+                <ul className="type-body list-inside list-disc space-y-1.5">
                   <li>Certificado en desarrollo de apps móviles</li>
                   <li>Certificado en diseño multimedia</li>
                   <li>Certificado en programación de videojuegos</li>
@@ -96,13 +96,13 @@ export default function Home() {
             {/* Habilidades */}
             <div className="relative cursor-pointer overflow-hidden rounded-[2rem] border border-white/[0.14] bg-[rgba(50,50,50,0.42)] p-5 pt-16 shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-xl transition-all duration-300 hover:scale-[1.01] sm:rounded-[2.25rem]">
               <h3
-                className="absolute left-3 top-3 z-10 inline-flex max-w-[calc(100%-1.5rem)] items-center rounded-[2rem] px-4 py-2 text-sm font-semibold text-white sm:left-4 sm:top-4 sm:rounded-[2.25rem] sm:px-4 sm:py-2 sm:text-base"
+                className="type-pill absolute left-3 top-3 z-10 inline-flex max-w-[calc(100%-1.5rem)] items-center rounded-[2rem] px-4 py-2 text-white sm:left-4 sm:top-4 sm:rounded-[2.25rem] sm:px-4 sm:py-2"
                 style={{ backgroundColor: '#32C4F0' }}
               >
                 Habilidades
               </h3>
               <div className="text-white">
-                <ul className="list-inside list-disc space-y-1.5 text-sm sm:text-base">
+                <ul className="type-body list-inside list-disc space-y-1.5">
                   <li>Diseño web</li>
                   <li>Fotografía</li>
                   <li>Diseño UX/UI</li>
@@ -115,7 +115,7 @@ export default function Home() {
             {/* Software */}
             <div className="relative cursor-pointer overflow-hidden rounded-[2rem] border border-white/[0.14] bg-[rgba(50,50,50,0.42)] p-5 pt-16 shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-xl transition-all duration-300 hover:scale-[1.01] sm:rounded-[2.25rem]">
               <h3
-                className="absolute left-3 top-3 z-10 inline-flex max-w-[calc(100%-1.5rem)] items-center rounded-[2rem] px-4 py-2 text-sm font-semibold text-white sm:left-4 sm:top-4 sm:rounded-[2.25rem] sm:px-4 sm:py-2 sm:text-base"
+                className="type-pill absolute left-3 top-3 z-10 inline-flex max-w-[calc(100%-1.5rem)] items-center rounded-[2rem] px-4 py-2 text-white sm:left-4 sm:top-4 sm:rounded-[2.25rem] sm:px-4 sm:py-2"
                 style={{ backgroundColor: '#32C4F0' }}
               >
                 Software
@@ -154,11 +154,12 @@ export default function Home() {
           <div className="projects-bg-animated" />
           <div className="projects-bg-glow-soft" />
         </div>
-        <div className="relative z-10 container max-w-sm sm:max-w-md lg:max-w-5xl py-16 sm:py-20 md:py-24">
-          <h2 className="mb-8 text-center text-4xl font-bold text-white md:mb-10 md:text-5xl">
-            Mis <span style={{ color: '#32C4F0' }}>proyectos</span>
-          </h2>
-          <div className="grid gap-4 md:grid-cols-3 md:gap-5">
+        <div className="relative z-10 px-5 sm:px-6 md:px-0">
+          <div className="container w-full max-w-4xl py-16 sm:py-20 md:py-24 lg:max-w-5xl xl:max-w-6xl">
+            <h2 className="type-section-title mb-8 text-center md:mb-10">
+              Mis <span style={{ color: '#32C4F0' }}>proyectos</span>
+            </h2>
+            <div className="grid gap-4 md:grid-cols-3 md:gap-5">
             <ProjectCard
               title="Clarity"
               description="App móvil para organizar mejor tu dinero y tomar el control de tus finanzas personales."
@@ -184,11 +185,12 @@ export default function Home() {
           <div className="mt-8 flex justify-center md:mt-10">
             <Link
               href="/proyectos"
-              className="inline-block rounded-full px-8 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-100 sm:text-base"
+              className="type-button-sm inline-block rounded-full px-8 py-3 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-100"
               style={{ backgroundColor: '#32C4F0' }}
             >
               Ver todos
             </Link>
+          </div>
           </div>
         </div>
       </section>
@@ -199,17 +201,17 @@ export default function Home() {
         className="relative w-full overflow-hidden bg-black py-16 md:py-20"
       >
         <div className="relative z-10 container w-full">
-          <div className="mx-auto max-w-5xl">
-            <h2 className="mb-3 text-center text-4xl font-bold text-white md:mb-4 md:text-5xl">
+          <div className="mx-auto w-full max-w-md">
+            <h2 className="type-section-title mb-3 text-center md:mb-4">
               Contacto
             </h2>
-            <p className="mx-auto mb-8 max-w-xl text-center text-base leading-relaxed text-gray-300 sm:mb-10 sm:text-lg">
+            <p className="type-lead mb-8 text-center text-gray-300 sm:mb-10">
               ¿Necesitas una web o una app?{' '}
               <span style={{ color: '#32C4F0' }}>Contáctame</span>.
             </p>
 
             <div className="rounded-3xl border border-white/[0.14] bg-[rgba(50,50,50,0.42)] p-6 shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-xl sm:p-8 md:p-10">
-              <div className="mx-auto w-full max-w-md text-white">
+              <div className="w-full text-white">
                 <ContactForm />
               </div>
             </div>
@@ -219,10 +221,10 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-gray-800 bg-black">
-        <div className="container flex max-w-5xl flex-col items-center justify-center gap-4 py-8 text-center">
+        <div className="container flex max-w-4xl flex-col items-center justify-center gap-4 py-8 text-center">
           <div>
-            <p className="text-white font-medium mb-1">Juan Flores</p>
-            <div className="flex items-center gap-2 text-gray-400 text-sm">
+            <p className="type-body font-medium text-white">Juan Flores</p>
+            <div className="type-body-sm mt-1 flex items-center justify-center gap-2 text-gray-400">
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
                 fill="none" 

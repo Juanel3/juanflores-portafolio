@@ -137,7 +137,7 @@ export default function ImageGallery({ projectId, projectImage }: ImageGalleryPr
             <button
               type="button"
               onClick={openGalleryModal}
-              className="rounded-full border-2 border-[#32C4F0] px-8 py-3 font-semibold text-white transition-all hover:scale-105 hover:bg-[#32C4F0]/10 active:scale-100"
+              className="type-button rounded-full border-2 border-[#32C4F0] px-8 py-3 text-white transition-all hover:scale-105 hover:bg-[#32C4F0]/10 active:scale-100"
             >
               Ver galería
             </button>
@@ -208,7 +208,7 @@ export default function ImageGallery({ projectId, projectImage }: ImageGalleryPr
       </div>
       ) : (
       <div
-        className={`mx-auto hidden px-2 md:grid ${useSameGalleryLayout ? 'max-w-[90rem] grid-cols-[1fr_3fr_1fr] gap-0 items-start' : 'max-w-5xl grid-cols-3 gap-4'}`}
+        className={`mx-auto hidden px-2 md:grid ${useSameGalleryLayout ? 'max-w-[90rem] grid-cols-[1fr_3fr_1fr] gap-0 items-start' : 'max-w-4xl grid-cols-3 gap-4'}`}
       >
         {/* Izquierda */}
         <div className={`group relative order-2 md:order-1 ${useSameGalleryLayout ? 'z-0 md:scale-85 md:-mr-16 lg:-mr-24 md:mt-16 lg:mt-24' : ''}`}>
@@ -228,7 +228,7 @@ export default function ImageGallery({ projectId, projectImage }: ImageGalleryPr
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-transparent" />
                 <div className="absolute top-0 left-0 right-0 px-4 py-4">
                   <div className="bg-black/40 backdrop-blur-md rounded-lg px-4 py-2 inline-block">
-                    <h3 className="text-lg font-normal text-white">Inicio</h3>
+                    <h3 className="type-card-title font-normal text-white">Inicio</h3>
                   </div>
                 </div>
               </div>
@@ -258,7 +258,7 @@ export default function ImageGallery({ projectId, projectImage }: ImageGalleryPr
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-transparent" />
                 <div className="absolute top-0 left-0 right-0 px-4 py-4">
                   <div className="bg-black/40 backdrop-blur-md rounded-lg px-4 py-2 inline-block">
-                    <h3 className="text-lg font-normal text-white">Servicios</h3>
+                    <h3 className="type-card-title font-normal text-white">Servicios</h3>
                   </div>
                 </div>
               </div>
@@ -294,7 +294,7 @@ export default function ImageGallery({ projectId, projectImage }: ImageGalleryPr
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-transparent" />
                 <div className="absolute top-0 left-0 right-0 px-4 py-4">
                   <div className="bg-black/40 backdrop-blur-md rounded-lg px-4 py-2 inline-block">
-                    <h3 className="text-lg font-normal text-white">Portafolio</h3>
+                    <h3 className="type-card-title font-normal text-white">Portafolio</h3>
                   </div>
                 </div>
               </div>
