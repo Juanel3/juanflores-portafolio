@@ -20,12 +20,12 @@ export default function NavBar({ baseHref = '', className = 'top-5' }: NavBarPro
   const [open, setOpen] = useState(false);
 
   const linkClass =
-    'shrink-0 whitespace-nowrap py-2.5 text-white rounded-full font-medium transition-colors hover:text-[#32C4F0] md:px-3 lg:px-5';
+    'shrink-0 whitespace-nowrap py-2 text-sm text-white rounded-full font-medium transition-colors hover:text-[#32C4F0] md:px-3 md:text-[0.9375rem] lg:px-4';
   const fullHref = (hash: string) => `${baseHref}#${hash}`;
 
   return (
-    <header className={`fixed left-1/2 top-5 z-50 -translate-x-1/2 px-4 ${className}`}>
-      <nav className="flex flex-nowrap items-center justify-center gap-2 rounded-full border border-blue-300/40 bg-gray-900/70 px-4 py-3 shadow-xl backdrop-blur-lg md:gap-2 md:px-4 lg:gap-3 lg:px-6">
+    <header className={`fixed left-1/2 top-4 z-50 -translate-x-1/2 px-4 sm:top-5 ${className}`}>
+      <nav className="flex flex-nowrap items-center justify-center gap-1.5 rounded-full border border-blue-300/40 bg-gray-900/70 px-3 py-2 shadow-xl backdrop-blur-lg sm:gap-2 sm:px-4 sm:py-2.5 md:gap-2 md:px-4 lg:gap-3 lg:px-5">
         {/* Desktop: full links — una sola fila en md+ */}
         <div className="hidden flex-nowrap md:flex md:items-center md:gap-2 lg:gap-3">
           {links.map(({ href, label }) => (

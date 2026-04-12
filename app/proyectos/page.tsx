@@ -31,7 +31,7 @@ export default function ProyectosPage() {
     <main className="min-h-screen bg-black">
       <NavBar />
 
-      <section className="relative w-full py-32 overflow-hidden min-h-screen">
+      <section className="relative min-h-screen w-full overflow-hidden py-20 sm:py-24 md:py-28">
         {/* Fondo degradado azul celeste a negro */}
         <div
           className="absolute inset-0 w-full h-full z-0"
@@ -40,12 +40,12 @@ export default function ProyectosPage() {
           }}
         />
 
-        <div className="relative z-10 container mx-auto px-6 sm:px-10 lg:px-14 max-w-6xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-20 text-white text-center">
+        <div className="relative z-10 container max-w-5xl">
+          <h1 className="mb-12 text-center text-3xl font-bold text-white md:mb-14 md:text-4xl">
             Mis <span style={{ color: '#32C4F0' }}>proyectos</span>
           </h1>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <div className="mb-10 grid gap-6 md:grid-cols-2 md:gap-7 lg:grid-cols-3">
             {projects.map((project) => (
               <ProjectCard
                 key={project.href}
@@ -61,7 +61,7 @@ export default function ProyectosPage() {
           <div className="flex justify-center">
             <Link
               href="/#inicio"
-              className="px-10 py-4 rounded-full text-white text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-110 hover:brightness-110 active:scale-105 inline-block"
+              className="inline-block rounded-full px-8 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-100 sm:text-base"
               style={{ backgroundColor: '#32C4F0' }}
             >
               Volver al inicio

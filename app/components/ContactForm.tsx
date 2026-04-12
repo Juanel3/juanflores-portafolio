@@ -38,7 +38,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
       <div>
         <label htmlFor="nombre" className="block text-sm font-medium text-white mb-1">
           Nombre
@@ -50,7 +50,7 @@ export default function ContactForm() {
           value={formData.nombre}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#32C4F0] focus:border-transparent"
+          className="w-full rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-sm text-white placeholder-gray-300 backdrop-blur-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#32C4F0] sm:px-4 sm:py-3 sm:text-base"
           placeholder="Tu nombre"
         />
       </div>
@@ -65,7 +65,7 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#32C4F0] focus:border-transparent"
+          className="w-full rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-sm text-white placeholder-gray-300 backdrop-blur-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#32C4F0] sm:px-4 sm:py-3 sm:text-base"
           placeholder="tu@email.com"
         />
       </div>
@@ -79,15 +79,15 @@ export default function ContactForm() {
           value={formData.mensaje}
           onChange={handleChange}
           required
-          rows={5}
-          className="w-full px-4 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#32C4F0] focus:border-transparent resize-none"
+          rows={4}
+          className="w-full resize-none rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-sm text-white placeholder-gray-300 backdrop-blur-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#32C4F0] sm:px-4 sm:py-3 sm:text-base"
           placeholder="Tu mensaje..."
         ></textarea>
       </div>
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full px-8 py-3 text-white rounded-xl font-semibold text-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full rounded-xl px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:scale-[1.02] hover:shadow-lg disabled:cursor-not-allowed disabled:opacity-50 sm:py-3 sm:text-base"
         style={{ backgroundColor: '#32C4F0' }}
       >
         {isSubmitting ? 'Enviando...' : 'Enviar mensaje'}

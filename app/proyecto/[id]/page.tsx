@@ -97,7 +97,7 @@ export default async function ProjectDetail({
       <NavBar baseHref="/" className="top-6" />
 
       {/* Intro */}
-      <section className="relative overflow-hidden pt-32 pb-16 sm:pt-36 md:pt-40 md:pb-24">
+      <section className="relative overflow-hidden pb-12 pt-28 sm:pt-32 md:pb-20 md:pt-36">
         <div
           className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_90%_60%_at_50%_-30%,rgba(50,196,240,0.14),transparent_55%)]"
           aria-hidden
@@ -107,12 +107,12 @@ export default async function ProjectDetail({
           aria-hidden
         />
 
-        <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-14">
+        <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="grid items-center gap-8 lg:grid-cols-12 lg:gap-10">
             <div className="space-y-6 lg:col-span-5">
               <h1 className="flex flex-col gap-2">
-                <span className="text-lg font-normal text-neutral-400 sm:text-xl">{project.title}</span>
-                <span className="text-4xl font-bold leading-[1.06] tracking-tight text-white sm:text-5xl lg:text-[2.65rem] xl:text-5xl">
+                <span className="text-base font-normal text-neutral-400 sm:text-lg">{project.title}</span>
+                <span className="text-3xl font-bold leading-[1.08] tracking-tight text-white sm:text-4xl lg:text-[2.15rem] xl:text-[2.35rem]">
                   {project.subtitle}
                 </span>
               </h1>
@@ -121,7 +121,7 @@ export default async function ProjectDetail({
               >
                 {project.tag}
               </span>
-              <p className="max-w-xl text-base leading-relaxed text-neutral-400 sm:text-lg">
+              <p className="max-w-xl text-sm leading-relaxed text-neutral-400 sm:text-base">
                 {project.description}
               </p>
               {project.id === 'jm-estudio' && (
@@ -171,11 +171,11 @@ export default async function ProjectDetail({
       </section>
 
       {/* Interfaz: título, descripción e imágenes */}
-      <section className="border-t border-white/[0.07] bg-neutral-950 py-14 md:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <section className="border-t border-white/[0.07] bg-neutral-950 py-12 md:py-16">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center md:max-w-3xl">
-            <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">Interfaz</h2>
-            <p className="mt-4 text-base text-neutral-400 md:text-lg">
+            <h2 className="text-2xl font-bold tracking-tight text-white md:text-3xl">Interfaz</h2>
+            <p className="mt-3 text-sm text-neutral-400 md:mt-4 md:text-base">
               {project.id === 'clarity'
                 ? 'Selecciona la imagen para ver completa la app.'
                 : 'Selecciona la imagen para ver completa la página.'}
