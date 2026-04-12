@@ -174,7 +174,7 @@ export default function Home() {
           <h2 className="mb-8 text-center text-3xl font-bold text-white md:mb-10 md:text-4xl">
             Mis <span style={{ color: '#32C4F0' }}>proyectos</span>
           </h2>
-          <div className="grid items-start gap-6 md:grid-cols-3 md:gap-7">
+          <div className="grid gap-6 md:grid-cols-3 md:gap-7">
             <ProjectCard
               title="Clarity"
               description="App móvil para organizar mejor tu dinero y tomar el control de tus finanzas personales."
