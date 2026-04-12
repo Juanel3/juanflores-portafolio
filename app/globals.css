@@ -7,14 +7,13 @@
   --foreground: #ededed;
 }
 
-/* Escala base algo menor: el contenido se siente menos abultado en todos los anchos */
 html {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 @media (min-width: 1024px) {
   html {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
@@ -260,5 +259,63 @@ body {
 
 .animate-float-in.animation-delay-500 {
   animation-delay: 0.25s;
+}
+
+/* Mis proyectos (home): degradado animado */
+@keyframes projects-bg-shift {
+  0%,
+  100% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 32%;
+  }
+}
+
+@keyframes projects-bg-glow-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: translate(-50%, 0) scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translate(-50%, -5%) scale(1.07);
+  }
+}
+
+.projects-bg-animated {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    #000000 22%,
+    #020a10 34%,
+    #061c26 46%,
+    #0a3d4a 60%,
+    #1a6f88 80%,
+    #6ed8f6 100%
+  );
+  background-size: 100% 200%;
+  background-position: 50% 0%;
+  animation: projects-bg-shift 16s ease-in-out infinite;
+}
+
+.projects-bg-glow-soft {
+  position: absolute;
+  left: 50%;
+  bottom: -22%;
+  width: min(150vw, 960px);
+  height: min(52vh, 400px);
+  transform: translateX(-50%);
+  background: radial-gradient(
+    ellipse 82% 58% at 50% 100%,
+    rgba(110, 216, 246, 0.42) 0%,
+    rgba(110, 216, 246, 0.1) 42%,
+    transparent 68%
+  );
+  pointer-events: none;
+  animation: projects-bg-glow-pulse 11s ease-in-out infinite;
 }
 

@@ -23,20 +23,20 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 container w-full pt-16 pb-16 sm:pt-20 sm:pb-20">
           <div className="mx-auto flex w-full max-w-4xl flex-col items-center space-y-6 text-center text-white sm:space-y-7 lg:max-w-3xl lg:space-y-5">
-            <p className="text-xl font-medium text-white/90 drop-shadow-md animate-hero-subtitle sm:text-2xl md:text-3xl lg:text-2xl">
+            <p className="text-xl font-medium text-white/90 drop-shadow-md animate-hero-subtitle sm:text-2xl md:text-3xl lg:text-3xl">
               ¡Hola, soy <strong className="font-bold text-white">Juan Flores</strong>!
             </p>
-            <h1 className="text-5xl font-bold leading-[1.08] drop-shadow-lg animate-hero-title animation-delay-200 md:text-6xl lg:text-5xl xl:text-6xl">
+            <h1 className="text-5xl font-bold leading-[1.08] drop-shadow-lg animate-hero-title animation-delay-200 md:text-6xl lg:text-6xl xl:text-7xl">
               <span className="hero-title-gradient-text">Diseñador UX/UI</span>
             </h1>
-            <p className="text-lg text-white drop-shadow-md animate-hero-subtitle animation-delay-400 md:text-xl lg:text-lg xl:text-lg">
+            <p className="text-lg text-white drop-shadow-md animate-hero-subtitle animation-delay-400 md:text-xl lg:text-xl">
               Bienvenido a mi portafolio
             </p>
             <div className="flex w-full max-w-md flex-col gap-4 pt-9 animate-hero-cta animation-delay-600 sm:max-w-none sm:flex-row sm:justify-center sm:gap-5 sm:pt-7 lg:gap-4 lg:pt-6">
-              <a href="#proyectos" className="inline-flex w-full items-center justify-center rounded-full border-2 border-transparent px-8 py-3 text-center text-base font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-100 sm:w-auto sm:px-10 sm:py-3.5 sm:text-lg lg:px-8 lg:py-2.5 lg:text-base" style={{ backgroundColor: '#32C4F0' }}>
+              <a href="#proyectos" className="inline-flex w-full items-center justify-center rounded-full border-2 border-transparent px-8 py-3 text-center text-base font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-100 sm:w-auto sm:px-10 sm:py-3.5 sm:text-lg lg:px-9 lg:py-3 lg:text-lg" style={{ backgroundColor: '#32C4F0' }}>
                 Ver proyectos
               </a>
-              <a href="#contacto" className="inline-flex w-full items-center justify-center rounded-full border-2 bg-transparent px-8 py-3 text-center text-base font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-opacity-20 hover:shadow-lg active:scale-100 sm:w-auto sm:px-10 sm:py-3.5 sm:text-lg lg:px-8 lg:py-2.5 lg:text-base" style={{ borderColor: '#32C4F0' }}>
+              <a href="#contacto" className="inline-flex w-full items-center justify-center rounded-full border-2 bg-transparent px-8 py-3 text-center text-base font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-opacity-20 hover:shadow-lg active:scale-100 sm:w-auto sm:px-10 sm:py-3.5 sm:text-lg lg:px-9 lg:py-3 lg:text-lg" style={{ borderColor: '#32C4F0' }}>
                 Contáctame
               </a>
             </div>
@@ -46,13 +46,13 @@ export default function Home() {
 
       {/* About Section */}
       <section id="sobre-mi" className="bg-black">
-        <div className="container max-w-5xl py-16 sm:py-20 md:py-24">
-          <h2 className="mb-8 text-center text-3xl font-bold text-white md:mb-10 md:text-4xl">
+        <div className="container max-w-4xl py-16 sm:py-20 md:py-24">
+          <h2 className="mb-8 text-center text-4xl font-bold text-white md:mb-10 md:text-5xl">
             Sobre <span style={{ color: '#32C4F0' }}>mí</span>
           </h2>
 
           <div className="mb-10 md:mb-12">
-            <p className="text-sm leading-relaxed text-white sm:text-base">
+            <p className="text-base leading-relaxed text-white sm:text-lg">
               Soy Juan Flores, ingeniero en desarrollo de software con enfoque en diseño UX/UI. Aplico mis conocimientos para diseñar soluciones intuitivas y visualmente atractivas que mejoran la experiencia del usuario. Cuento con experiencia en marketing digital, en creación de contenido y gestión de redes sociales. Siempre estoy en busca de nuevas oportunidades para aprender, innovar y mejorar mis habilidades.
             </p>
           </div>
@@ -149,32 +149,16 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section 
-        id="proyectos" 
-        className="relative w-full overflow-hidden py-20 sm:py-24 md:py-28"
-      >
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 w-screen h-full z-0 animate-float-bg"
-          style={{
-            backgroundImage: "url('/images/Hero Gradient - 34.jpg')",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            left: '50%',
-            marginLeft: '-50vw',
-            width: '100vw'
-          }}
-        />
-        
-        {/* Overlay para mejor legibilidad del texto */}
-        <div className="absolute inset-0 bg-black/10 z-[1]" />
-        
-        <div className="relative z-10 container max-w-5xl">
-          <h2 className="mb-8 text-center text-3xl font-bold text-white md:mb-10 md:text-4xl">
+      <section id="proyectos" className="relative w-full overflow-hidden bg-black">
+        <div className="pointer-events-none absolute inset-0 z-0" aria-hidden>
+          <div className="projects-bg-animated" />
+          <div className="projects-bg-glow-soft" />
+        </div>
+        <div className="relative z-10 container max-w-sm sm:max-w-md lg:max-w-5xl py-16 sm:py-20 md:py-24">
+          <h2 className="mb-8 text-center text-4xl font-bold text-white md:mb-10 md:text-5xl">
             Mis <span style={{ color: '#32C4F0' }}>proyectos</span>
           </h2>
-          <div className="grid gap-6 md:grid-cols-3 md:gap-7">
+          <div className="grid gap-4 md:grid-cols-3 md:gap-5">
             <ProjectCard
               title="Clarity"
               description="App móvil para organizar mejor tu dinero y tomar el control de tus finanzas personales."
@@ -197,7 +181,7 @@ export default function Home() {
               href="/proyecto/imprenta"
             />
           </div>
-          <div className="mt-10 flex justify-center md:mt-12">
+          <div className="mt-8 flex justify-center md:mt-10">
             <Link
               href="/proyectos"
               className="inline-block rounded-full px-8 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-100 sm:text-base"
@@ -216,11 +200,15 @@ export default function Home() {
       >
         <div className="relative z-10 container w-full">
           <div className="mx-auto max-w-5xl">
-            <div className="rounded-3xl border border-white/[0.14] bg-[rgba(50,50,50,0.42)] p-6 shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-xl sm:p-8 md:p-10">
-              <h2 className="mb-6 text-center text-3xl font-bold text-white md:mb-8 md:text-4xl">
-                Contacto
-              </h2>
+            <h2 className="mb-3 text-center text-4xl font-bold text-white md:mb-4 md:text-5xl">
+              Contacto
+            </h2>
+            <p className="mx-auto mb-8 max-w-xl text-center text-base leading-relaxed text-gray-300 sm:mb-10 sm:text-lg">
+              ¿Necesitas una web o una app?{' '}
+              <span style={{ color: '#32C4F0' }}>Contáctame</span>.
+            </p>
 
+            <div className="rounded-3xl border border-white/[0.14] bg-[rgba(50,50,50,0.42)] p-6 shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-xl sm:p-8 md:p-10">
               <div className="mx-auto w-full max-w-md text-white">
                 <ContactForm />
               </div>

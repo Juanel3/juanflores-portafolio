@@ -31,21 +31,21 @@ export default function ProyectosPage() {
     <main className="min-h-screen bg-black">
       <NavBar />
 
-      <section className="relative min-h-screen w-full overflow-hidden py-20 sm:py-24 md:py-28">
+      <section className="relative min-h-screen w-full overflow-hidden">
         {/* Fondo degradado azul celeste a negro */}
         <div
-          className="absolute inset-0 w-full h-full z-0"
+          className="absolute inset-0 z-0 h-full w-full"
           style={{
             background: 'linear-gradient(180deg, #000 0%, #000 25%, #1a5f7a 45%, #32C4F0 75%, #fff 100%)',
           }}
         />
 
-        <div className="relative z-10 container max-w-5xl">
-          <h1 className="mb-12 text-center text-3xl font-bold text-white md:mb-14 md:text-4xl">
+        <div className="relative z-10 container max-w-sm sm:max-w-md lg:max-w-5xl py-16 sm:py-20 md:py-24">
+          <h1 className="mb-8 text-center text-4xl font-bold text-white md:mb-10 md:text-5xl">
             Mis <span style={{ color: '#32C4F0' }}>proyectos</span>
           </h1>
 
-          <div className="mb-10 grid gap-6 md:grid-cols-2 md:gap-7 lg:grid-cols-3">
+          <div className="mb-8 grid gap-4 md:grid-cols-2 md:mb-10 md:gap-5 lg:grid-cols-3">
             {projects.map((project) => (
               <ProjectCard
                 key={project.href}
