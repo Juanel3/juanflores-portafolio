@@ -68,6 +68,11 @@ body {
   .type-input {
     @apply text-sm md:text-base;
   }
+
+  /* Vidrio / blur: fondo semitransparente + backdrop-blur-xl (como las cards originales) */
+  .glass-panel {
+    @apply relative border border-white/[0.14] bg-[rgba(50,50,50,0.42)] shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-xl backdrop-saturate-150 transition-all duration-300;
+  }
 }
 
 @layer utilities {

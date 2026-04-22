@@ -11,7 +11,7 @@ type ProjectCardProps = {
 export default function ProjectCard({ title, description, imageSrc, imageAlt, href }: ProjectCardProps) {
   return (
     <div
-      className="mx-auto flex h-full w-full max-w-lg cursor-pointer flex-col rounded-[2rem] border border-white/[0.14] bg-[rgba(50,50,50,0.42)] p-4 shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-xl transition-all duration-300 hover:scale-[1.01] sm:rounded-[2.25rem] sm:p-5 md:mx-0 md:max-w-none"
+      className="glass-panel mx-auto flex h-full w-full max-w-lg cursor-pointer flex-col overflow-hidden rounded-[2rem] p-4 hover:scale-[1.01] sm:rounded-[2.25rem] sm:p-5 md:mx-0 md:max-w-none"
     >
       <div className="relative h-44 w-full shrink-0 overflow-hidden rounded-[calc(2rem-1rem)] sm:h-48 sm:rounded-[calc(2.25rem-1.25rem)]">
         <Image src={imageSrc} alt={imageAlt} fill className="object-cover" sizes="(max-width: 768px) min(100vw, 32rem), 33vw" />

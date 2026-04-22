@@ -57,16 +57,11 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Cuadrícula 2x2: Educación, Cursos, Habilidades, Software */}
-          <div className="mb-6 grid gap-4 md:grid-cols-2 md:gap-5">
+          {/* md: Educación arriba izq; Habilidades | Software al lado abajo; Cursos derecha alto (3 filas) */}
+          <div className="mb-6 grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-5 md:items-stretch">
             {/* Educación */}
-            <div className="relative cursor-pointer overflow-hidden rounded-[2rem] border border-white/[0.14] bg-[rgba(50,50,50,0.42)] p-5 pt-16 shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-xl transition-all duration-300 hover:scale-[1.01] sm:rounded-[2.25rem]">
-              <h3
-                className="type-pill absolute left-3 top-3 z-10 inline-flex max-w-[calc(100%-1.5rem)] items-center rounded-[2rem] px-4 py-2 text-white sm:left-4 sm:top-4 sm:rounded-[2.25rem] sm:px-4 sm:py-2"
-                style={{ backgroundColor: '#32C4F0' }}
-              >
-                Educación
-              </h3>
+            <div className="glass-panel cursor-pointer overflow-hidden rounded-2xl p-5 hover:scale-[1.01] sm:rounded-3xl sm:p-6 md:col-span-2 md:col-start-1 md:row-start-1">
+              <h3 className="type-card-title mb-4 font-bold text-white">Educación</h3>
               <div className="text-white">
                 <p className="type-body mb-2 font-medium text-white">Ingeniería en desarrollo de software</p>
                 <p className="type-body mb-1 text-gray-200">Universidad Tecmilenio</p>
@@ -74,16 +69,13 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Cursos | certificados */}
-            <div className="relative cursor-pointer overflow-hidden rounded-[2rem] border border-white/[0.14] bg-[rgba(50,50,50,0.42)] p-5 pt-16 shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-xl transition-all duration-300 hover:scale-[1.01] sm:rounded-[2.25rem]">
-              <h3
-                className="type-pill absolute left-3 top-3 z-10 inline-flex max-w-[calc(100%-1.5rem)] items-center rounded-[2rem] px-4 py-2 text-left leading-snug text-white sm:left-4 sm:top-4 sm:rounded-[2.25rem] sm:px-4 sm:py-2"
-                style={{ backgroundColor: '#32C4F0' }}
-              >
+            {/* Cursos | certificados — columna derecha, más alto (span 3 filas) */}
+            <div className="glass-panel flex min-h-[20rem] cursor-pointer flex-col overflow-hidden rounded-2xl p-5 hover:scale-[1.01] sm:min-h-[22rem] sm:rounded-3xl sm:p-6 md:col-span-2 md:col-start-3 md:row-span-3 md:row-start-1 md:min-h-0 md:h-full md:justify-between md:py-7">
+              <h3 className="type-card-title mb-4 max-w-full shrink-0 text-left font-bold leading-snug text-white md:mb-6">
                 Cursos | certificados
               </h3>
-              <div className="text-white">
-                <ul className="type-body list-inside list-disc space-y-1.5">
+              <div className="text-white md:flex-1 md:pt-2">
+                <ul className="type-body list-inside list-disc space-y-2 md:space-y-3">
                   <li>Certificado en desarrollo de apps móviles</li>
                   <li>Certificado en diseño multimedia</li>
                   <li>Certificado en programación de videojuegos</li>
@@ -94,13 +86,8 @@ export default function Home() {
             </div>
 
             {/* Habilidades */}
-            <div className="relative cursor-pointer overflow-hidden rounded-[2rem] border border-white/[0.14] bg-[rgba(50,50,50,0.42)] p-5 pt-16 shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-xl transition-all duration-300 hover:scale-[1.01] sm:rounded-[2.25rem]">
-              <h3
-                className="type-pill absolute left-3 top-3 z-10 inline-flex max-w-[calc(100%-1.5rem)] items-center rounded-[2rem] px-4 py-2 text-white sm:left-4 sm:top-4 sm:rounded-[2.25rem] sm:px-4 sm:py-2"
-                style={{ backgroundColor: '#32C4F0' }}
-              >
-                Habilidades
-              </h3>
+            <div className="glass-panel flex min-h-0 cursor-pointer flex-col overflow-hidden rounded-2xl p-5 hover:scale-[1.01] sm:rounded-3xl sm:p-6 md:col-span-1 md:col-start-1 md:row-span-2 md:row-start-2 md:h-full">
+              <h3 className="type-card-title mb-4 font-bold text-white">Habilidades</h3>
               <div className="text-white">
                 <ul className="type-body list-inside list-disc space-y-1.5">
                   <li>Diseño web</li>
@@ -113,14 +100,9 @@ export default function Home() {
             </div>
 
             {/* Software */}
-            <div className="relative cursor-pointer overflow-hidden rounded-[2rem] border border-white/[0.14] bg-[rgba(50,50,50,0.42)] p-5 pt-16 shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-xl transition-all duration-300 hover:scale-[1.01] sm:rounded-[2.25rem]">
-              <h3
-                className="type-pill absolute left-3 top-3 z-10 inline-flex max-w-[calc(100%-1.5rem)] items-center rounded-[2rem] px-4 py-2 text-white sm:left-4 sm:top-4 sm:rounded-[2.25rem] sm:px-4 sm:py-2"
-                style={{ backgroundColor: '#32C4F0' }}
-              >
-                Software
-              </h3>
-              <div className="flex flex-wrap items-center justify-start gap-6 sm:gap-8">
+            <div className="glass-panel flex min-h-0 cursor-pointer flex-col overflow-hidden rounded-2xl p-5 hover:scale-[1.01] sm:rounded-3xl sm:p-6 md:col-span-1 md:col-start-2 md:row-span-2 md:row-start-2 md:h-full">
+              <h3 className="type-card-title mb-4 font-bold text-white">Software</h3>
+              <div className="flex flex-1 flex-wrap items-center justify-start gap-6 sm:gap-8">
                 <Image
                   src="/images/image 2.png"
                   alt="Software 1"
@@ -210,7 +192,7 @@ export default function Home() {
               <span style={{ color: '#32C4F0' }}>Contáctame</span>.
             </p>
 
-            <div className="rounded-3xl border border-white/[0.14] bg-[rgba(50,50,50,0.42)] p-6 shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-xl sm:p-8 md:p-10">
+            <div className="glass-panel rounded-3xl p-6 sm:p-8 md:p-10">
               <div className="w-full text-white">
                 <ContactForm />
               </div>
