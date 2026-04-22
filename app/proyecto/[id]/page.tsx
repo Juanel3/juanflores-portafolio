@@ -47,22 +47,22 @@ const projects: { [key: string]: Project } = {
 
 const projectAccent: Record<string, { glow: string; chip: string }> = {
   clarity: {
-    glow: 'from-violet-500/30 via-[#32C4F0]/20 to-transparent',
-    chip: 'border-[#32C4F0]/40 bg-[#32C4F0]/15',
+    glow: 'from-violet-500/30 via-[#1A7AB5]/20 to-transparent',
+    chip: 'border-[#1A7AB5]/40 bg-[#1A7AB5]/15',
   },
   imprenta: {
-    glow: 'from-[#32C4F0]/35 via-cyan-400/15 to-transparent',
-    chip: 'border-[#32C4F0]/40 bg-[#32C4F0]/15',
+    glow: 'from-[#1A7AB5]/35 via-blue-600/12 to-transparent',
+    chip: 'border-[#1A7AB5]/40 bg-[#1A7AB5]/15',
   },
   'jm-estudio': {
-    glow: 'from-[#32C4F0]/35 via-cyan-400/15 to-transparent',
-    chip: 'border-[#32C4F0]/40 bg-[#32C4F0]/15',
+    glow: 'from-[#1A7AB5]/35 via-blue-600/12 to-transparent',
+    chip: 'border-[#1A7AB5]/40 bg-[#1A7AB5]/15',
   },
 };
 
 const defaultAccent = {
-  glow: 'from-[#32C4F0]/25 via-slate-500/10 to-transparent',
-  chip: 'border-[#32C4F0]/40 bg-[#32C4F0]/15',
+  glow: 'from-[#1A7AB5]/25 via-slate-500/10 to-transparent',
+  chip: 'border-[#1A7AB5]/40 bg-[#1A7AB5]/15',
 };
 
 export default async function ProjectDetail({
@@ -81,7 +81,7 @@ export default async function ProjectDetail({
           <h1 className="type-section-title mt-4">Proyecto no encontrado</h1>
           <Link
             href="/#proyectos"
-            className="type-button-sm mt-10 rounded-full border border-[#32C4F0]/40 bg-[#32C4F0]/10 px-6 py-3 text-[#7ddcf5] transition hover:bg-[#32C4F0]/20"
+            className="type-button-sm mt-10 rounded-full border border-[#1A7AB5]/40 bg-[#1A7AB5]/10 px-6 py-3 text-[#79B5DA] transition hover:bg-[#1A7AB5]/20"
           >
             Volver a proyectos
           </Link>
@@ -99,7 +99,7 @@ export default async function ProjectDetail({
       {/* Intro */}
       <section className="relative overflow-hidden pb-12 pt-28 sm:pt-32 md:pb-20 md:pt-36">
         <div
-          className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_90%_60%_at_50%_-30%,rgba(50,196,240,0.14),transparent_55%)]"
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_90%_60%_at_50%_-30%,rgba(26,122,181,0.14),transparent_55%)]"
           aria-hidden
         />
         <div
@@ -129,7 +129,7 @@ export default async function ProjectDetail({
                   href={project.websiteUrl ?? '#'}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="type-button-sm inline-flex items-center gap-2 rounded-full border-2 border-[#32C4F0] bg-[#32C4F0]/10 px-8 py-3 text-white transition hover:scale-[1.02] hover:bg-[#32C4F0]/25"
+                  className="type-button-sm inline-flex items-center gap-2 rounded-full border-2 border-[#1A7AB5] bg-[#1A7AB5]/10 px-8 py-3 text-white transition hover:scale-[1.02] hover:bg-[#1A7AB5]/25"
                 >
                   Ver sitio
                   <svg
@@ -190,7 +190,7 @@ export default async function ProjectDetail({
       <div className="fixed bottom-6 right-4 z-50 sm:bottom-8 sm:right-8">
         <a
           href="/#proyectos"
-          className="type-button-sm flex items-center gap-2 rounded-full border border-[#32C4F0]/35 bg-neutral-950/90 px-5 py-3 text-white shadow-lg shadow-black/40 backdrop-blur-md transition hover:border-[#32C4F0]/60 hover:bg-[#32C4F0]/15"
+          className="type-button-sm flex items-center gap-2 rounded-full border border-[#1A7AB5]/35 bg-neutral-950/90 px-5 py-3 text-white shadow-lg shadow-black/40 backdrop-blur-md transition hover:border-[#1A7AB5]/60 hover:bg-[#1A7AB5]/15"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -198,7 +198,7 @@ export default async function ProjectDetail({
             viewBox="0 0 24 24"
             strokeWidth={2.25}
             stroke="currentColor"
-            className="h-5 w-5 text-[#32C4F0]"
+            className="h-5 w-5 text-[#1A7AB5]"
           >
             <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
           </svg>

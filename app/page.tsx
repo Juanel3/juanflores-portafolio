@@ -7,7 +7,13 @@ import ProjectCard from './components/ProjectCard';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black">
+    <main
+      className="min-h-screen bg-[length:100%_100%] bg-no-repeat"
+      style={{
+        backgroundImage:
+          'linear-gradient(180deg, #000000 0%, #040a12 26%, #061018 44%, #0f2842 60%, #050505 84%, #000000 100%)',
+      }}
+    >
       <NavBar />
 
       {/* Hero Section with Background Image */}
@@ -16,13 +22,13 @@ export default function Home() {
         className="relative w-full min-h-screen flex items-center overflow-hidden"
       >
         <HeroBackground />
-        
+
         {/* Overlay para mejor legibilidad del texto */}
         <div className="absolute inset-0 bg-black/10 z-[1]" />
         
         {/* Content */}
         <div className="relative z-10 container w-full pt-16 pb-16 sm:pt-20 sm:pb-20">
-          <div className="mx-auto flex w-full max-w-4xl flex-col items-center space-y-6 text-center text-white sm:space-y-7 lg:max-w-2xl lg:space-y-5">
+          <div className="mx-auto flex w-full max-w-4xl flex-col items-center space-y-6 text-center text-white sm:space-y-7 lg:max-w-4xl lg:space-y-5">
             <p className="type-hero-intro drop-shadow-md animate-hero-subtitle">
               ¡Hola, soy <strong className="font-bold text-white">Juan Flores</strong>!
             </p>
@@ -33,10 +39,10 @@ export default function Home() {
               Bienvenido a mi portafolio
             </p>
             <div className="flex w-full max-w-md flex-col gap-4 pt-9 animate-hero-cta animation-delay-600 sm:max-w-none sm:flex-row sm:justify-center sm:gap-5 sm:pt-7 lg:gap-4 lg:pt-6">
-              <a href="#proyectos" className="type-button inline-flex w-full items-center justify-center rounded-full border-2 border-transparent px-8 py-3 text-center text-white shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-100 sm:w-auto sm:px-10 sm:py-3.5 lg:px-9 lg:py-3" style={{ backgroundColor: '#32C4F0' }}>
+              <a href="#proyectos" className="type-button inline-flex w-full items-center justify-center rounded-full border-2 border-transparent px-8 py-3 text-center text-white shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-100 sm:w-auto sm:px-10 sm:py-3.5 lg:px-9 lg:py-3" style={{ backgroundColor: '#1A7AB5' }}>
                 Ver proyectos
               </a>
-              <a href="#contacto" className="type-button inline-flex w-full items-center justify-center rounded-full border-2 bg-transparent px-8 py-3 text-center text-white transition-all duration-300 hover:scale-105 hover:bg-opacity-20 hover:shadow-lg active:scale-100 sm:w-auto sm:px-10 sm:py-3.5 lg:px-9 lg:py-3" style={{ borderColor: '#32C4F0' }}>
+              <a href="#contacto" className="type-button inline-flex w-full items-center justify-center rounded-full border-2 bg-transparent px-8 py-3 text-center text-white transition-all duration-300 hover:scale-105 hover:bg-opacity-20 hover:shadow-lg active:scale-100 sm:w-auto sm:px-10 sm:py-3.5 lg:px-9 lg:py-3" style={{ borderColor: '#1A7AB5' }}>
                 Contáctame
               </a>
             </div>
@@ -45,10 +51,10 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="sobre-mi" className="bg-black">
+      <section id="sobre-mi" className="relative">
         <div className="container w-full max-w-4xl py-16 sm:py-20 md:py-24 lg:max-w-5xl xl:max-w-6xl">
           <h2 className="type-section-title mb-8 text-center md:mb-10">
-            Sobre <span style={{ color: '#32C4F0' }}>mí</span>
+            Sobre <span style={{ color: '#1A7AB5' }}>mí</span>
           </h2>
 
           <div className="mb-10 md:mb-12">
@@ -57,10 +63,10 @@ export default function Home() {
             </p>
           </div>
 
-          {/* md: Educación arriba izq; Habilidades | Software al lado abajo; Cursos derecha alto (3 filas) */}
-          <div className="mb-6 grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-5 md:items-stretch">
+          {/* Cuadrícula 2×2: Educación, Cursos, Habilidades, Software */}
+          <div className="mb-6 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5">
             {/* Educación */}
-            <div className="glass-panel cursor-pointer overflow-hidden rounded-2xl p-5 hover:scale-[1.01] sm:rounded-3xl sm:p-6 md:col-span-2 md:col-start-1 md:row-start-1">
+            <div className="glass-panel cursor-pointer overflow-hidden rounded-2xl p-5 hover:scale-[1.01] sm:rounded-3xl sm:p-6">
               <h3 className="type-card-title mb-4 font-bold text-white">Educación</h3>
               <div className="text-white">
                 <p className="type-body mb-2 font-medium text-white">Ingeniería en desarrollo de software</p>
@@ -69,13 +75,13 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Cursos | certificados — columna derecha, más alto (span 3 filas) */}
-            <div className="glass-panel flex min-h-[20rem] cursor-pointer flex-col overflow-hidden rounded-2xl p-5 hover:scale-[1.01] sm:min-h-[22rem] sm:rounded-3xl sm:p-6 md:col-span-2 md:col-start-3 md:row-span-3 md:row-start-1 md:min-h-0 md:h-full md:justify-between md:py-7">
-              <h3 className="type-card-title mb-4 max-w-full shrink-0 text-left font-bold leading-snug text-white md:mb-6">
+            {/* Cursos | certificados */}
+            <div className="glass-panel cursor-pointer overflow-hidden rounded-2xl p-5 hover:scale-[1.01] sm:rounded-3xl sm:p-6">
+              <h3 className="type-card-title mb-4 max-w-full text-left font-bold leading-snug text-white">
                 Cursos | certificados
               </h3>
-              <div className="text-white md:flex-1 md:pt-2">
-                <ul className="type-body list-inside list-disc space-y-2 md:space-y-3">
+              <div className="text-white">
+                <ul className="type-body list-inside list-disc space-y-1.5">
                   <li>Certificado en desarrollo de apps móviles</li>
                   <li>Certificado en diseño multimedia</li>
                   <li>Certificado en programación de videojuegos</li>
@@ -86,7 +92,7 @@ export default function Home() {
             </div>
 
             {/* Habilidades */}
-            <div className="glass-panel flex min-h-0 cursor-pointer flex-col overflow-hidden rounded-2xl p-5 hover:scale-[1.01] sm:rounded-3xl sm:p-6 md:col-span-1 md:col-start-1 md:row-span-2 md:row-start-2 md:h-full">
+            <div className="glass-panel cursor-pointer overflow-hidden rounded-2xl p-5 hover:scale-[1.01] sm:rounded-3xl sm:p-6">
               <h3 className="type-card-title mb-4 font-bold text-white">Habilidades</h3>
               <div className="text-white">
                 <ul className="type-body list-inside list-disc space-y-1.5">
@@ -100,9 +106,9 @@ export default function Home() {
             </div>
 
             {/* Software */}
-            <div className="glass-panel flex min-h-0 cursor-pointer flex-col overflow-hidden rounded-2xl p-5 hover:scale-[1.01] sm:rounded-3xl sm:p-6 md:col-span-1 md:col-start-2 md:row-span-2 md:row-start-2 md:h-full">
+            <div className="glass-panel cursor-pointer overflow-hidden rounded-2xl p-5 hover:scale-[1.01] sm:rounded-3xl sm:p-6">
               <h3 className="type-card-title mb-4 font-bold text-white">Software</h3>
-              <div className="flex flex-1 flex-wrap items-center justify-start gap-6 sm:gap-8">
+              <div className="flex flex-wrap items-center justify-start gap-6 sm:gap-8">
                 <Image
                   src="/images/image 2.png"
                   alt="Software 1"
@@ -131,15 +137,11 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="proyectos" className="relative w-full overflow-hidden bg-black">
-        <div className="pointer-events-none absolute inset-0 z-0" aria-hidden>
-          <div className="projects-bg-animated" />
-          <div className="projects-bg-glow-soft" />
-        </div>
+      <section id="proyectos" className="relative w-full overflow-hidden">
         <div className="relative z-10 px-5 sm:px-6 md:px-0">
           <div className="container w-full max-w-4xl py-16 sm:py-20 md:py-24 lg:max-w-5xl xl:max-w-6xl">
             <h2 className="type-section-title mb-8 text-center md:mb-10">
-              Mis <span style={{ color: '#32C4F0' }}>proyectos</span>
+              Mis <span style={{ color: '#1A7AB5' }}>proyectos</span>
             </h2>
             <div className="grid gap-4 md:grid-cols-3 md:gap-5">
             <ProjectCard
@@ -168,7 +170,7 @@ export default function Home() {
             <Link
               href="/proyectos"
               className="type-button-sm inline-block rounded-full px-8 py-3 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:brightness-110 active:scale-100"
-              style={{ backgroundColor: '#32C4F0' }}
+              style={{ backgroundColor: '#1A7AB5' }}
             >
               Ver todos
             </Link>
@@ -180,7 +182,7 @@ export default function Home() {
       {/* Contact Section */}
       <section
         id="contacto"
-        className="relative w-full overflow-hidden bg-black py-16 md:py-20"
+        className="relative w-full overflow-hidden py-16 md:py-20"
       >
         <div className="relative z-10 container w-full">
           <div className="mx-auto w-full max-w-md">
@@ -189,7 +191,7 @@ export default function Home() {
             </h2>
             <p className="type-lead mb-8 text-center text-gray-300 sm:mb-10">
               ¿Necesitas una web o una app?{' '}
-              <span style={{ color: '#32C4F0' }}>Contáctame</span>.
+              <span style={{ color: '#1A7AB5' }}>Contáctame</span>.
             </p>
 
             <div className="glass-panel rounded-3xl p-6 sm:p-8 md:p-10">
@@ -202,7 +204,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-gray-800 bg-black">
+      <footer className="border-t border-white/10 bg-black/20 backdrop-blur-sm">
         <div className="container flex max-w-4xl flex-col items-center justify-center gap-4 py-8 text-center">
           <div>
             <p className="type-body font-medium text-white">Juan Flores</p>
@@ -217,7 +219,7 @@ export default function Home() {
               >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
               </svg>
-              <a href="mailto:juanmf3@outlook.com" className="hover:text-[#32C4F0] transition-colors">
+              <a href="mailto:juanmf3@outlook.com" className="hover:text-[#1A7AB5] transition-colors">
                 juanmf3@outlook.com
               </a>
             </div>

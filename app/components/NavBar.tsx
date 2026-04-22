@@ -20,7 +20,7 @@ export default function NavBar({ baseHref = '', className = 'top-5' }: NavBarPro
   const [open, setOpen] = useState(false);
 
   const linkClass =
-    'shrink-0 whitespace-nowrap py-2 text-sm text-white rounded-full font-medium transition-colors hover:text-[#32C4F0] md:px-3 md:text-[0.9375rem] lg:px-4';
+    'shrink-0 whitespace-nowrap py-2 text-sm text-white rounded-full font-medium transition-colors hover:text-[#1A7AB5] md:px-3 md:text-[0.9375rem] lg:px-4';
   const fullHref = (hash: string) => `${baseHref}#${hash}`;
 
   return (
@@ -71,7 +71,7 @@ export default function NavBar({ baseHref = '', className = 'top-5' }: NavBarPro
                 key={href}
                 href={fullHref(href)}
                 onClick={() => setOpen(false)}
-                className="type-body block px-5 py-3 text-center text-white transition-colors hover:bg-white/10 hover:text-[#32C4F0]"
+                className="type-body block px-5 py-3 text-center text-white transition-colors hover:bg-white/10 hover:text-[#1A7AB5]"
               >
                 {label}
               </a>

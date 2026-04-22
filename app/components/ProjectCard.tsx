@@ -23,7 +23,7 @@ export default function ProjectCard({ title, description, imageSrc, imageAlt, hr
           <a
             href={href}
             className="type-button-sm rounded-full px-5 py-2 text-white shadow-md shadow-black/25 transition-all duration-200 hover:scale-105 hover:shadow-lg hover:shadow-black/30"
-            style={{ backgroundColor: '#32C4F0' }}
+            style={{ backgroundColor: '#1A7AB5' }}
           >
             Ver
           </a>

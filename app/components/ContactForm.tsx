@@ -50,7 +50,7 @@ export default function ContactForm() {
           value={formData.nombre}
           onChange={handleChange}
           required
-          className="type-input w-full rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-white placeholder-gray-300 backdrop-blur-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#32C4F0] sm:px-4 sm:py-3"
+          className="type-input w-full rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-white placeholder-gray-300 backdrop-blur-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#1A7AB5] sm:px-4 sm:py-3"
           placeholder="Tu nombre"
         />
       </div>
@@ -65,7 +65,7 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="type-input w-full rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-white placeholder-gray-300 backdrop-blur-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#32C4F0] sm:px-4 sm:py-3"
+          className="type-input w-full rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-white placeholder-gray-300 backdrop-blur-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#1A7AB5] sm:px-4 sm:py-3"
           placeholder="tu@email.com"
         />
       </div>
@@ -80,7 +80,7 @@ export default function ContactForm() {
           onChange={handleChange}
           required
           rows={4}
-          className="type-input w-full resize-none rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-white placeholder-gray-300 backdrop-blur-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#32C4F0] sm:px-4 sm:py-3"
+          className="type-input w-full resize-none rounded-xl border border-white/20 bg-white/10 px-3 py-2.5 text-white placeholder-gray-300 backdrop-blur-md focus:border-transparent focus:outline-none focus:ring-2 focus:ring-[#1A7AB5] sm:px-4 sm:py-3"
           placeholder="Tu mensaje..."
         ></textarea>
       </div>
@@ -88,7 +88,7 @@ export default function ContactForm() {
         type="submit"
         disabled={isSubmitting}
         className="type-button w-full rounded-xl px-6 py-2.5 text-white transition-all duration-300 hover:scale-[1.02] hover:shadow-lg disabled:cursor-not-allowed disabled:opacity-50 sm:py-3"
-        style={{ backgroundColor: '#32C4F0' }}
+        style={{ backgroundColor: '#1A7AB5' }}
       >
         {isSubmitting ? 'Enviando...' : 'Enviar mensaje'}
       </button>

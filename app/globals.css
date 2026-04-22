@@ -33,13 +33,13 @@ body {
     @apply text-xl font-bold tracking-tight text-white md:text-2xl;
   }
   .type-hero-intro {
-    @apply text-lg font-medium text-white/90 sm:text-xl md:text-2xl;
+    @apply text-xl font-medium text-white/90 sm:text-2xl md:text-3xl;
   }
   .type-hero-display {
-    @apply text-4xl font-bold leading-[1.08] md:text-5xl lg:text-5xl xl:text-6xl;
+    @apply text-5xl font-bold leading-[1.06] sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl;
   }
   .type-hero-tagline {
-    @apply text-base text-white md:text-lg;
+    @apply text-lg text-white sm:text-xl md:text-2xl;
   }
   .type-lead {
     @apply text-base leading-relaxed md:text-lg;
@@ -69,7 +69,7 @@ body {
     @apply text-sm md:text-base;
   }
 
-  /* Vidrio / blur: fondo semitransparente + backdrop-blur-xl (como las cards originales) */
+  /* Vidrio / blur: fondo semitransparente + backdrop-blur-xl */
   .glass-panel {
     @apply relative border border-white/[0.14] bg-[rgba(50,50,50,0.42)] shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-xl backdrop-saturate-150 transition-all duration-300;
   }
@@ -223,11 +223,11 @@ body {
   background: linear-gradient(
     100deg,
     #ffffff 0%,
-    #e8f4fc 20%,
-    #b8e4f5 40%,
-    #7ecce8 50%,
-    #b8e4f5 60%,
-    #e8f4fc 80%,
+    #e4eef6 20%,
+    #9ec5e0 40%,
+    #4a9bc8 50%,
+    #9ec5e0 60%,
+    #e4eef6 80%,
     #ffffff 100%
   );
   background-size: 220% 100%;
@@ -311,62 +311,3 @@ body {
 .animate-float-in.animation-delay-500 {
   animation-delay: 0.25s;
 }
-
-/* Mis proyectos (home): degradado animado */
-@keyframes projects-bg-shift {
-  0%,
-  100% {
-    background-position: 50% 0%;
-  }
-  50% {
-    background-position: 50% 32%;
-  }
-}
-
-@keyframes projects-bg-glow-pulse {
-  0%,
-  100% {
-    opacity: 0.45;
-    transform: translate(-50%, 0) scale(1);
-  }
-  50% {
-    opacity: 0.9;
-    transform: translate(-50%, -5%) scale(1.07);
-  }
-}
-
-.projects-bg-animated {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    #000000 0%,
-    #000000 22%,
-    #020a10 34%,
-    #061c26 46%,
-    #0a3d4a 60%,
-    #1a6f88 80%,
-    #6ed8f6 100%
-  );
-  background-size: 100% 200%;
-  background-position: 50% 0%;
-  animation: projects-bg-shift 16s ease-in-out infinite;
-}
-
-.projects-bg-glow-soft {
-  position: absolute;
-  left: 50%;
-  bottom: -22%;
-  width: min(150vw, 960px);
-  height: min(52vh, 400px);
-  transform: translateX(-50%);
-  background: radial-gradient(
-    ellipse 82% 58% at 50% 100%,
-    rgba(110, 216, 246, 0.42) 0%,
-    rgba(110, 216, 246, 0.1) 42%,
-    transparent 68%
-  );
-  pointer-events: none;
-  animation: projects-bg-glow-pulse 11s ease-in-out infinite;
-}
-

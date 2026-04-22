@@ -21,7 +21,7 @@ export default function OpenGalleryButton() {
       <button
         type="button"
         onClick={dispatchOpenClarityGallery}
-        className="type-button rounded-full border-2 border-[#32C4F0] px-8 py-3 text-white transition-all hover:scale-105 hover:bg-[#32C4F0]/10 active:scale-100"
+        className="type-button rounded-full border-2 border-[#1A7AB5] px-8 py-3 text-white transition-all hover:scale-105 hover:bg-[#1A7AB5]/10 active:scale-100"
       >
         Ver galería
       </button>
