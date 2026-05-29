@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import AboutCardIcon from './components/AboutCardIcon';
 import ContactForm from './components/ContactForm';
 import HeroBackground from './components/HeroBackground';
 import NavBar from './components/NavBar';
@@ -63,11 +64,14 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Cuadrícula 2×2: Educación, Cursos, Habilidades, Software */}
-          <div className="mb-6 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5">
+          {/* Educación, Software y Habilidades arriba; Cursos abajo */}
+          <div className="mb-6 grid grid-cols-1 gap-4 md:grid-cols-3 md:items-stretch md:gap-5">
             {/* Educación */}
-            <div className="glass-panel cursor-pointer overflow-hidden rounded-2xl p-5 hover:scale-[1.01] sm:rounded-3xl sm:p-6">
-              <h3 className="type-card-title mb-4 font-bold text-white">Educación</h3>
+            <div className="about-card glass-panel flex h-full min-h-0 flex-col cursor-pointer rounded-2xl p-5 hover:scale-[1.01] sm:rounded-3xl sm:p-6">
+              <div className="mb-4 flex items-center gap-3">
+                <AboutCardIcon type="education" />
+                <h3 className="type-card-title font-bold text-white">Educación</h3>
+              </div>
               <div className="text-white">
                 <p className="type-body mb-2 font-medium text-white">Ingeniería en desarrollo de software</p>
                 <p className="type-body mb-1 text-gray-200">Universidad Tecmilenio</p>
@@ -75,61 +79,90 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Cursos | certificados */}
-            <div className="glass-panel cursor-pointer overflow-hidden rounded-2xl p-5 hover:scale-[1.01] sm:rounded-3xl sm:p-6">
-              <h3 className="type-card-title mb-4 max-w-full text-left font-bold leading-snug text-white">
-                Cursos | certificados
-              </h3>
-              <div className="text-white">
-                <ul className="type-body list-inside list-disc space-y-1.5">
-                  <li>Certificado en desarrollo de apps móviles</li>
-                  <li>Certificado en diseño multimedia</li>
-                  <li>Certificado en programación de videojuegos</li>
-                  <li>Curso de marketing digital</li>
-                  <li>Curso de community manager</li>
-                </ul>
+            {/* Software */}
+            <div className="about-card glass-panel flex h-full min-h-0 flex-col cursor-pointer rounded-2xl p-5 hover:scale-[1.01] sm:rounded-3xl sm:p-6">
+              <div className="mb-4 flex items-center gap-3">
+                <AboutCardIcon type="software" />
+                <h3 className="type-card-title font-bold text-white">Software</h3>
+              </div>
+              <div className="flex flex-wrap items-center justify-start gap-6 sm:gap-8">
+                <Image
+                  src="/images/image 2.png"
+                  alt="Figma"
+                  width={64}
+                  height={64}
+                  className="h-14 w-auto object-contain sm:h-16"
+                />
+                <Image
+                  src="/images/image 3.png"
+                  alt="Adobe XD"
+                  width={64}
+                  height={64}
+                  className="h-14 w-auto object-contain sm:h-16"
+                />
+                <Image
+                  src="/images/image 4.png"
+                  alt="Adobe Illustrator"
+                  width={64}
+                  height={64}
+                  className="h-14 w-auto object-contain sm:h-16"
+                />
               </div>
             </div>
 
             {/* Habilidades */}
-            <div className="glass-panel cursor-pointer overflow-hidden rounded-2xl p-5 hover:scale-[1.01] sm:rounded-3xl sm:p-6">
-              <h3 className="type-card-title mb-4 font-bold text-white">Habilidades</h3>
+            <div className="about-card glass-panel flex h-full min-h-0 flex-col cursor-pointer rounded-2xl p-5 hover:scale-[1.01] sm:rounded-3xl sm:p-6">
+              <div className="mb-4 flex items-center gap-3">
+                <AboutCardIcon type="skills" />
+                <h3 className="type-card-title font-bold text-white">Habilidades</h3>
+              </div>
               <div className="text-white">
-                <ul className="type-body list-inside list-disc space-y-1.5">
-                  <li>Diseño web</li>
-                  <li>Fotografía</li>
-                  <li>Diseño UX/UI</li>
-                  <li>Marketing digital</li>
-                  <li>Edición de video</li>
+                <ul className="flex flex-wrap gap-2">
+                  <li className="type-body inline-flex rounded-2xl border-2 border-[#1A7AB5] bg-[#1A7AB5]/15 px-3 py-2 text-gray-100">
+                    Diseño web
+                  </li>
+                  <li className="type-body inline-flex rounded-2xl border-2 border-[#1A7AB5] px-3 py-2 text-gray-100">
+                    Fotografía
+                  </li>
+                  <li className="type-body inline-flex rounded-2xl border-2 border-[#1A7AB5] bg-[#1A7AB5]/15 px-3 py-2 text-gray-100">
+                    Diseño UX/UI
+                  </li>
+                  <li className="type-body inline-flex rounded-2xl border-2 border-[#1A7AB5] px-3 py-2 text-gray-100">
+                    Marketing digital
+                  </li>
+                  <li className="type-body inline-flex rounded-2xl border-2 border-[#1A7AB5] bg-[#1A7AB5]/15 px-3 py-2 text-gray-100">
+                    Edición de video
+                  </li>
                 </ul>
               </div>
             </div>
 
-            {/* Software */}
-            <div className="glass-panel cursor-pointer overflow-hidden rounded-2xl p-5 hover:scale-[1.01] sm:rounded-3xl sm:p-6">
-              <h3 className="type-card-title mb-4 font-bold text-white">Software</h3>
-              <div className="flex flex-wrap items-center justify-start gap-6 sm:gap-8">
-                <Image
-                  src="/images/image 2.png"
-                  alt="Software 1"
-                  width={64}
-                  height={64}
-                  className="h-14 object-contain sm:h-16"
-                />
-                <Image
-                  src="/images/image 3.png"
-                  alt="Software 2"
-                  width={64}
-                  height={64}
-                  className="h-14 object-contain sm:h-16"
-                />
-                <Image
-                  src="/images/image 4.png"
-                  alt="Software 3"
-                  width={64}
-                  height={64}
-                  className="h-14 object-contain sm:h-16"
-                />
+            {/* Cursos | certificados */}
+            <div className="about-card glass-panel cursor-pointer rounded-2xl p-5 hover:scale-[1.01] md:col-span-3 sm:rounded-3xl sm:p-6">
+              <div className="mb-4 flex items-center gap-3">
+                <AboutCardIcon type="courses" />
+                <h3 className="type-card-title font-bold leading-snug text-white">
+                  Cursos | certificados
+                </h3>
+              </div>
+              <div className="text-white">
+                <ul className="flex flex-wrap gap-2">
+                  <li className="type-body inline-flex rounded-2xl border-2 border-[#1A7AB5] px-3 py-2 text-gray-100">
+                    Certificado en desarrollo de apps móviles
+                  </li>
+                  <li className="type-body inline-flex rounded-2xl border-2 border-[#1A7AB5] bg-[#1A7AB5]/15 px-3 py-2 text-gray-100">
+                    Certificado en diseño multimedia
+                  </li>
+                  <li className="type-body inline-flex rounded-2xl border-2 border-[#1A7AB5] px-3 py-2 text-gray-100">
+                    Certificado en programación de videojuegos
+                  </li>
+                  <li className="type-body inline-flex rounded-2xl border-2 border-[#1A7AB5] bg-[#1A7AB5]/15 px-3 py-2 text-gray-100">
+                    Curso de marketing digital
+                  </li>
+                  <li className="type-body inline-flex rounded-2xl border-2 border-[#1A7AB5] px-3 py-2 text-gray-100">
+                    Curso de community manager
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
